@@ -1,3 +1,31 @@
+header {
+  background-color: hsl(245, 40%, 15%);
+  padding: 0.75em;
+}
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.lang-container {
+  display: flex;
+  gap: 1em;
+  font-size: 1rem;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.lang {
+  color: hsl(0, 0%, 90%);
+  font-size: inherit;
+  border: none;
+  background-color: hsl(245, 40%, 15%);
+  padding: 0.2em 0.6em;
+}
+
+.active {
+  outline: 1px solid hsl(0, 0%, 90%);
+}
 
 /*# sourceMappingURL=App.css.map */

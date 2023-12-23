@@ -1,0 +1,31 @@
+@use 'variables' as var;
+
+header {
+    background-color: var.$clr-darkblue;
+    padding: 0.75em;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.lang-container {
+    display: flex;
+    gap: 1em;
+    font-size: 1rem;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.lang {
+    color: var.$clr-white;
+    font-size: inherit;
+    border: none;
+    background-color: var.$clr-darkblue;
+    padding: 0.2em 0.6em;
+}
+
+.active {
+    outline: 1px solid var.$clr-white;
+}
