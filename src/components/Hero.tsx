@@ -1,10 +1,45 @@
-// import './styles/Hero.css'
+import './../styles/Hero.css'
+import Me from './../assets/me.jpg'
 
+interface HeroText {
+  greeting:String,
+  btn_about:String,
+  btn_contact:String
 
-export default function Hero() {
+}
+
+interface HeroProps {
+  text_data:HeroText
+}
+
+export default function Hero(props:HeroProps) {
 
   return (
-    <div>
+    <div className="hero">
+      <div className="grid-container">
+        <div className="img-social-container">
+          <div className="img-container">
+            <img src={Me} alt=""/>
+          </div>
+          <div className="social-container">
+            social icons
+          </div>
+        </div>
+        <div className="content-container">
+          <h1>{props.text_data.greeting}</h1>
+          <p>... ...</p>
+        </div>
+        <a href="#">
+          <div>
+            icon & {props.text_data.btn_about}
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            icon & {props.text_data.btn_contact}
+          </div>
+        </a>
+      </div>
     </div>
   )
 }

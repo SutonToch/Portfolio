@@ -22,6 +22,7 @@ header {
   border: none;
   background-color: hsl(245, 40%, 15%);
   padding: 0.2em 0.6em;
+  cursor: pointer;
 }
 
 .active {

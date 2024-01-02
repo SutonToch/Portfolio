@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { text_data } from './text_data.ts'
 import Hero from './components/Hero.tsx'
 import './styles/App.css'
 
@@ -16,7 +17,9 @@ export default function App() {
           </div>
         </div>
       </header>
-      <Hero />
+      <Hero 
+        text_data = {lang == "EN" ? text_data.en.hero : text_data.de.hero}
+      />
       {/* Projekte */}
       {/* Footer */}
     </>
