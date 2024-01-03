@@ -1,6 +1,6 @@
 .hero {
   color: hsl(0, 0%, 90%);
-  padding: 1em;
+  padding: 3em 5vw;
   background-color: hsl(245, 40%, 15%);
   min-height: 90svh;
 }
@@ -10,16 +10,55 @@
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
-  grid-gap: 10em;
+  grid-gap: 6em;
   max-width: 1440px;
   margin: 0 auto;
 }
 
+.img-social-container {
+  order: 1;
+}
+
 .img-container {
-  border: 3px solid hsl(0, 0%, 90%);
+  border: 10px solid hsl(0, 0%, 90%);
   border-radius: 20px;
-  max-width: 450px;
+  max-width: 500px;
   overflow: hidden;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-evenly;
+  border: 3px solid hsl(0, 0%, 90%);
+  border-radius: 10px;
+  margin: 1em auto 0;
+  padding: 0.5em;
+  width: 80%;
+}
+
+.content-container h1 {
+  font-size: 2.5rem;
+}
+.content-container p {
+  font-size: 1.2rem;
+}
+
+.hero-btn {
+  order: 2;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  padding: 0.5em;
+  border: 3px solid hsl(0, 0%, 90%);
+  border-radius: 10px;
+}
+.hero-btn:hover, .hero-btn:focus-visible {
+  opacity: 0.8;
+}
+
+.hero-btn--content {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=Hero.css.map */

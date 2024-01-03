@@ -27,6 +27,7 @@ header {
 
 .active {
   outline: 1px solid hsl(0, 0%, 90%);
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=App.css.map */

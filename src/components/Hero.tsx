@@ -29,13 +29,13 @@ export default function Hero(props:HeroProps) {
           <h1>{props.text_data.greeting}</h1>
           <p>... ...</p>
         </div>
-        <a href="#">
-          <div>
+        <a className="hero-btn" href="#">
+          <div className="hero-btn--content">
             icon & {props.text_data.btn_about}
           </div>
         </a>
-        <a href="#">
-          <div>
+        <a className="hero-btn" href="#">
+          <div className="hero-btn--content">
             icon & {props.text_data.btn_contact}
           </div>
         </a>
