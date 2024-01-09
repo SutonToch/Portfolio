@@ -9,7 +9,12 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
+}
+
+p {
+  max-width: 75ch;
 }
 
 /*# sourceMappingURL=index.css.map */

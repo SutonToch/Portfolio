@@ -75,3 +75,31 @@
         margin: 0;
     }
 }
+
+@media (max-width: 900px) {
+    .hero {
+        padding: 1em 5vw;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+
+    .img-container {
+        order: 0;
+    }
+
+    .content-container {
+        text-align: center;
+        text-wrap: balance;
+
+        h1 {
+            font-size: 2.2rem;
+            margin: 0.3em 0;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}
