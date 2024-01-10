@@ -1,11 +1,10 @@
 .hero {
-  color: hsl(0, 0%, 90%);
+  color: hsl(0, 0%, 95%);
   padding: 3em 5vw;
   background-color: hsl(245, 40%, 15%);
   min-height: 90svh;
 }
-
-.grid-container {
+.hero .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -17,7 +16,7 @@
 
 .img-container {
   order: 1;
-  border: 10px solid hsl(0, 0%, 90%);
+  border: 10px solid hsl(0, 0%, 95%);
   border-radius: 20px;
   max-width: 500px;
   overflow: hidden;
@@ -40,7 +39,7 @@
   color: inherit;
   width: 100%;
   padding: 0.5em;
-  border: 3px solid hsl(0, 0%, 90%);
+  border: 3px solid hsl(0, 0%, 95%);
   border-radius: 10px;
 }
 .hero-btn:hover, .hero-btn:focus-visible {

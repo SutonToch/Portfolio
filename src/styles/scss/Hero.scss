@@ -5,17 +5,17 @@
     padding: 3em 5vw;
     background-color: var.$clr-darkblue;
     min-height: 90svh;
-}
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 8em;
-
-    max-width: 1440px;
-    margin: 0 auto;
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 8em;
+    
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 }
 
 .img-container {

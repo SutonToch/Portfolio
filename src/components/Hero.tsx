@@ -4,9 +4,9 @@ import About_Me_Icon from './../assets/icons/user_light.png'
 import Contact_Icon from './../assets/icons/address-book_light.png'
 
 interface HeroText {
-  greeting:String,
-  btn_about:String,
-  btn_contact:String
+  greeting:string,
+  btn_about:string,
+  btn_contact:string
 
 }
 

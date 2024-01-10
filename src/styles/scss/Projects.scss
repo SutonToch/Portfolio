@@ -1,0 +1,89 @@
+@use 'variables' as var;
+
+.projects {
+    color: var.$clr-darkblue;
+    background-color: var.$clr-white;
+    padding: 3em 5vw;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-gap: 8em;
+    
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+.slider-container {
+    margin: 3em auto;
+    max-width: 80%;
+    width: 400px;
+
+    .slide {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .slick-slider div {
+        height: 300px; //ugly, but for some reason necessary since 100% somehow doesn't work on a slider div
+    }
+
+    button::before {
+        color: var.$clr-darkblue !important; //override slider style
+    }
+
+    img {
+        border-radius: 5px;
+    }
+}
+
+.slides__content {
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.1rem;
+
+    }
+}
+
+.projects-btn {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 3em;
+    border: 3px solid var.$clr-darkblue;
+    border-radius: 10px;
+    
+
+    &:hover, &:focus-visible {
+        border-color: var.$clr-green;
+        box-shadow: 0px 0px 5px var.$clr-green;
+    }
+}
+
+.projects-btn--content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+
+    img {
+        margin-right: 0.5em;
+        width: 36px;
+        height: 36px;
+    }
+
+    p {
+        font-weight: bold;
+        margin: 0;
+    }
+}

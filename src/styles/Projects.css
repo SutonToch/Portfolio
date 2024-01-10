@@ -1,0 +1,75 @@
+.projects {
+  color: hsl(245, 40%, 15%);
+  background-color: hsl(0, 0%, 95%);
+  padding: 3em 5vw;
+}
+.projects .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 8em;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.slider-container {
+  margin: 3em auto;
+  max-width: 80%;
+  width: 400px;
+}
+.slider-container .slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.slider-container .slick-slider div {
+  height: 300px;
+}
+.slider-container button::before {
+  color: hsl(245, 40%, 15%) !important;
+}
+.slider-container img {
+  border-radius: 5px;
+}
+
+.slides__content h2 {
+  font-size: 2rem;
+}
+.slides__content p {
+  font-size: 1.1rem;
+}
+
+.projects-btn {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 3em;
+  border: 3px solid hsl(245, 40%, 15%);
+  border-radius: 10px;
+}
+.projects-btn:hover, .projects-btn:focus-visible {
+  border-color: #7db48e;
+  box-shadow: 0px 0px 5px #7db48e;
+}
+
+.projects-btn--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.projects-btn--content img {
+  margin-right: 0.5em;
+  width: 36px;
+  height: 36px;
+}
+.projects-btn--content p {
+  font-weight: bold;
+  margin: 0;
+}
+
+/*# sourceMappingURL=Projects.css.map */

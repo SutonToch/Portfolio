@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { text_data } from './text_data.ts'
 import Hero from './components/Hero.tsx'
+import Projects from './components/Projects.tsx'
 import './styles/App.css'
 
 export default function App() {
@@ -20,7 +21,9 @@ export default function App() {
       <Hero 
         text_data = {lang == "EN" ? text_data.en.hero : text_data.de.hero}
       />
-      {/* Projekte */}
+      <Projects 
+        text_data = {lang == "EN" ? text_data.en.projects : text_data.de.projects}
+      />
       {/* Footer */}
     </>
   )

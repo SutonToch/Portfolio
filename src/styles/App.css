@@ -17,7 +17,7 @@ header {
 }
 
 .lang {
-  color: hsl(0, 0%, 90%);
+  color: hsl(0, 0%, 95%);
   font-size: inherit;
   border: none;
   background-color: hsl(245, 40%, 15%);
@@ -26,7 +26,7 @@ header {
 }
 
 .active {
-  outline: 1px solid hsl(0, 0%, 90%);
+  outline: 1px solid hsl(0, 0%, 95%);
   border-radius: 5px;
 }
 
