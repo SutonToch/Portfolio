@@ -26,6 +26,12 @@ export const text_data = {
                 }
             ],
             "btn_projects": "Projekte"
+        },
+        "footer": {
+            "content": "Code und Design von Paul Pfütze",
+            "btn_about": "Über mich",
+            "btn_contact": "Kontakt",
+            "btn_projects": "Projekte"
         }
     },
     "en": {
@@ -51,6 +57,12 @@ export const text_data = {
                     content: "purpose, goal, problems, thought process, lessons learned2"
                 }
             ],
+            "btn_projects": "Projects"
+        },
+        "footer": {
+            "content": "Code and Design by Paul Pfütze",
+            "btn_about": "About me",
+            "btn_contact": "Contact",
             "btn_projects": "Projects"
         }
     }

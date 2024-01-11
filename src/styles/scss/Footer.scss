@@ -1,0 +1,52 @@
+@use 'variables' as var;
+
+footer {
+    background-color: var.$clr-darkblue;
+    color: var.$clr-white;
+    padding: 1em;
+    font-size: 1.1rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    
+    div {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        width: 100%;
+    }
+
+    a {
+        display: block;
+        padding: 0.2em;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover, a:focus {
+        color: var.$clr-green;
+    }
+}
+
+.attribution {
+    max-width: 15ch;
+    text-wrap: balance;
+}
+
+@media (max-width: 900px) {
+    footer {
+        font-size: 1rem;
+        padding: 0.8em;
+    }
+
+    .flex-container {
+        a {
+            padding: 0.1em;
+        }
+    }
+}

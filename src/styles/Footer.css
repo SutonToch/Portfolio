@@ -1,0 +1,46 @@
+footer {
+  background-color: hsl(245, 40%, 15%);
+  color: hsl(0, 0%, 95%);
+  padding: 1em;
+  font-size: 1.1rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.flex-container div {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  width: 100%;
+}
+.flex-container a {
+  display: block;
+  padding: 0.2em;
+  text-decoration: none;
+  color: inherit;
+}
+.flex-container a:hover, .flex-container a:focus {
+  color: #7db48e;
+}
+
+.attribution {
+  max-width: 15ch;
+  text-wrap: balance;
+}
+
+@media (max-width: 900px) {
+  footer {
+    font-size: 1rem;
+    padding: 0.8em;
+  }
+  .flex-container a {
+    padding: 0.1em;
+  }
+}
+
+/*# sourceMappingURL=Footer.css.map */
