@@ -68,7 +68,7 @@
   .hero {
     padding: 1em 5vw;
   }
-  .grid-container {
+  .hero .grid-container {
     grid-template-columns: 1fr;
     grid-gap: 1em;
   }

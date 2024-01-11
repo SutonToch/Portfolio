@@ -62,13 +62,14 @@ export default function Projects(props:ProjectsProps) {
                     <Slider {...settings}>
                         {slideElements}
                     </Slider>
-                    <a className="projects-btn" href="#">
-                      <div className="projects-btn--content">
-                        <img src={Projects_Icon} alt=""/>
-                        <p>{props.text_data.btn_projects}</p>
-                      </div>
-                    </a>
                 </div>
+                <></>
+                <a className="projects-btn" href="#">
+                  <div className="projects-btn--content">
+                    <img src={Projects_Icon} alt=""/>
+                    <p>{props.text_data.btn_projects}</p>
+                  </div>
+                </a>
             </div>
         </div>
     )
