@@ -12,6 +12,7 @@ interface HeroText {
 
 interface HeroProps {
   text_data:HeroText
+  setPage:React.Dispatch<React.SetStateAction<string>>
 }
 
 export default function Hero(props:HeroProps) {
@@ -26,13 +27,13 @@ export default function Hero(props:HeroProps) {
           <h1>{props.text_data.greeting}</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, quia. Consequatur dolorum hic optio aut possimus provident, ipsam perspiciatis nisi velit impedit accusamus voluptatibus quae. Dolorem nesciunt doloremque aliquid perspiciatis deserunt, esse libero, mollitia praesentium voluptates at quisquam aperiam dolores quaerat quod voluptatum, magnam saepe hic maxime quae debitis neque.</p>
         </div>
-        <a className="hero-btn" href="#">
+        <a className="hero-btn" onClick={() => props.setPage("About")}>
           <div className="hero-btn--content">
             <img src={About_Me_Icon} alt=""/>
             <p>{props.text_data.btn_about}</p>
           </div>
         </a>
-        <a className="hero-btn" href="#">
+        <a className="hero-btn" href="mailto:n.suton@web.de">
           <div className="hero-btn--content">
             <img src={Contact_Icon} alt=""/>
             <p>{props.text_data.btn_contact}</p>

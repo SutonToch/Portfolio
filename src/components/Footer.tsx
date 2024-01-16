@@ -9,6 +9,7 @@ interface FooterText {
 
 interface FooterProps {
   text_data:FooterText
+  setPage:React.Dispatch<React.SetStateAction<string>>
 }
 
 export default function Footer(props:FooterProps) {
@@ -17,16 +18,16 @@ export default function Footer(props:FooterProps) {
     <footer>
         <div className="flex-container">
             <div>
-                <a href="#">{props.text_data.btn_about}</a>
-                <a href="#">{props.text_data.btn_contact}</a>
-                <a href="#">{props.text_data.btn_projects}</a>
+                <a onClick={() => props.setPage("About")}>{props.text_data.btn_about}</a>
+                <a href="mailto:n.suton@web.de">{props.text_data.btn_contact}</a>
+                <a onClick={() => props.setPage("Projects")}>{props.text_data.btn_projects}</a>
             </div>
             <div className="attribution">
                 {props.text_data.content}
             </div>
             <div>
-                <a href="#">GitHub</a>
-                <a href="#">Frontend Mentor</a>
+                <a href="https://github.com/SutonToch" target="_blank">GitHub</a>
+                <a href="https://www.frontendmentor.io/profile/SutonToch" target="_blank">Frontend Mentor</a>
             </div>
         </div>
     </footer>

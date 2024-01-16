@@ -21,8 +21,8 @@ footer {
 .flex-container a {
   display: block;
   padding: 0.2em;
-  text-decoration: none;
   color: inherit;
+  text-decoration: underline;
 }
 .flex-container a:hover, .flex-container a:focus {
   color: #7db48e;

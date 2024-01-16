@@ -1,5 +1,5 @@
-import klickPic from "./assets/portfolio_klick_400.png"
-import frontendMentorPic from "./assets/frontend_mentor_logo.jpg"
+import klickPic from "./../assets/portfolio_klick_400.png"
+import frontendMentorPic from "./../assets/frontend_mentor_logo.jpg"
 
 export const text_data = {
     "de": {

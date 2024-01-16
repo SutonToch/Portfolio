@@ -20,6 +20,7 @@ interface ProjectsText {
 
 interface ProjectsProps {
   text_data:ProjectsText
+  setPage:React.Dispatch<React.SetStateAction<string>>
 }
 
 export default function Projects(props:ProjectsProps) {
@@ -64,7 +65,7 @@ export default function Projects(props:ProjectsProps) {
                     </Slider>
                 </div>
                 <></>
-                <a className="projects-btn" href="#">
+                <a className="projects-btn" onClick={() => props.setPage("Projects")}>
                   <div className="projects-btn--content">
                     <img src={Projects_Icon} alt=""/>
                     <p>{props.text_data.btn_projects}</p>
