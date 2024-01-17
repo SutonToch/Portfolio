@@ -1,0 +1,22 @@
+@use 'variables' as var;
+
+.about {
+    color: var.$clr-darkblue;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.about--headline {
+    font-size: 2.5rem;
+}
+
+.about--content-container {
+    
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}

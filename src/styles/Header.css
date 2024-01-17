@@ -7,6 +7,8 @@ header {
 header .container {
   display: flex;
   justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 header button {
   background-color: hsl(245, 40%, 15%);

@@ -1,0 +1,19 @@
+.about {
+  color: hsl(245, 40%, 15%);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.about--headline {
+  font-size: 2.5rem;
+}
+
+.about--content-container h2 {
+  font-size: 2rem;
+}
+.about--content-container p {
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=About.css.map */
