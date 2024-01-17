@@ -1,7 +1,10 @@
-import { useState } from 'react'
-import Home from './components/Home.tsx'
-
 import './styles/App.css'
+import { useState } from 'react'
+import Header from './components/Header.tsx'
+import Home from './components/Home.tsx'
+import Footer from './components/Footer.tsx'
+import {text_data} from './data/home_text.ts'
+
 
 export default function App() {
 
@@ -10,20 +13,16 @@ export default function App() {
 
   return (
     <>
-      <header>
-        <div className="container">
-          <div>
-            <button onClick={() => setPage("Home")}>Home</button>
-            <button onClick={() => setPage("About")}>{lang == "EN" ? "About me" : "Über mich"}</button>
-            <button onClick={() => setPage("Projects")}>{lang == "EN" ? "Projects" : "Projekte"}</button>
-          </div>
-          <div className="lang-container">
-            <button className={lang == "EN" ? "lang active" : "lang"} onClick={() => setLang("EN")}>EN</button>
-            <button className={lang == "DE" ? "lang active" : "lang"} onClick={() => setLang("DE")}>DE</button>
-          </div>
-        </div>
-      </header>
+      <Header 
+          setPage={setPage}
+          lang={lang}
+          setLang={setLang}
+      />
       {page == "Home" ? <Home lang={lang} setPage={setPage}/> : ""}
+      <Footer 
+          text_data = {lang == "EN" ? text_data.en.footer : text_data.de.footer}
+          setPage={setPage}
+      />
     </>
   )
 }
