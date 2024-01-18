@@ -52,6 +52,7 @@
     border-radius: 10px;
 
     transition: box-shadow 0.5s linear;
+    cursor: pointer;
     
     &:hover, &:focus-visible {
         border-color: var.$clr-green;

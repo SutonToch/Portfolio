@@ -53,6 +53,7 @@
   margin-top: 2em;
   border: 3px solid hsl(245, 40%, 15%);
   border-radius: 10px;
+  cursor: pointer;
 }
 .projects-btn:hover, .projects-btn:focus-visible {
   border-color: #7db48e;

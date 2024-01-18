@@ -45,6 +45,7 @@
   border: 3px solid hsl(0, 0%, 95%);
   border-radius: 10px;
   transition: box-shadow 0.5s linear;
+  cursor: pointer;
 }
 .hero-btn:hover, .hero-btn:focus-visible {
   border-color: #7db48e;
