@@ -43,4 +43,11 @@ header button:hover, header button:focus {
   border-radius: 5px;
 }
 
+@media (max-width: 900px) {
+  header button {
+    font-size: 1rem;
+    padding-inline: 0.8em;
+  }
+}
+
 /*# sourceMappingURL=Header.css.map */

@@ -47,3 +47,10 @@ header {
     outline: 1px solid var.$clr-white;
     border-radius: 5px;
 }
+
+@media (max-width: 900px) {
+    header button {
+        font-size: 1rem;
+        padding-inline: 0.8em;
+    }
+}
