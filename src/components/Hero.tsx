@@ -4,7 +4,8 @@ import About_Me_Icon from './../assets/icons/user_light.png'
 import Contact_Icon from './../assets/icons/address-book_light.png'
 
 interface HeroText {
-  greeting:string,
+  greeting_header:string,
+  greeting_content:string,
   btn_about:string,
   btn_contact:string
 
@@ -24,8 +25,8 @@ export default function Hero(props:HeroProps) {
           <img src={Me} alt=""/>
         </div>
         <div className="content-container">
-          <h1>{props.text_data.greeting}</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, quia. Consequatur dolorum hic optio aut possimus provident, ipsam perspiciatis nisi velit impedit accusamus voluptatibus quae. Dolorem nesciunt doloremque aliquid perspiciatis deserunt, esse libero, mollitia praesentium voluptates at quisquam aperiam dolores quaerat quod voluptatum, magnam saepe hic maxime quae debitis neque.</p>
+          <h1>{props.text_data.greeting_header}</h1>
+          <p>{props.text_data.greeting_content}</p>
         </div>
         <a className="hero-btn" onClick={() => props.setPage("About")}>
           <div className="hero-btn--content">
