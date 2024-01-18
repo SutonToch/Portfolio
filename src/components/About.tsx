@@ -25,9 +25,9 @@ interface AboutProps {
   
     return (
       <main className="about">
-        <h1 className="about--headline">
+        {/* <h1 className="about--headline">
           {current_text_data.headline}
-        </h1>
+        </h1> */}
         <div className="about--content-container">
           {...content}
         </div>
