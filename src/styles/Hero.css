@@ -1,14 +1,16 @@
 .hero {
+  display: flex;
   color: hsl(0, 0%, 95%);
   padding: 3em 5vw;
   background-color: hsl(245, 40%, 15%);
-  min-height: 90svh;
+  min-height: 95svh;
 }
 .hero .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  align-self: center;
   grid-gap: 8em;
   max-width: 1440px;
   margin: 0 auto;

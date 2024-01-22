@@ -54,7 +54,7 @@ export default function Projects(props:ProjectsProps) {
     }
 
     return (
-        <div className="projects">
+        <section className="projects">
             <div className="grid-container">
                 <div className="slide-content-container">
                     {slideContentElements[slideIndex]}
@@ -72,6 +72,6 @@ export default function Projects(props:ProjectsProps) {
                   </div>
                 </a>
             </div>
-        </div>
+        </section>
     )
 }

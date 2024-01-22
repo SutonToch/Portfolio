@@ -10,16 +10,21 @@ header .container {
   max-width: 1440px;
   margin: 0 auto;
 }
-header button {
+header button, header a {
   background-color: hsl(245, 40%, 15%);
   color: hsl(0, 0%, 95%);
   border: none;
   font-size: 1.1rem;
-  padding-inline: 1.5em;
+  padding-inline: 1em;
+  margin-inline: 0.5em;
+  text-decoration: none;
   cursor: pointer;
 }
-header button:hover, header button:focus {
+header button:hover, header button:focus, header a:hover, header a:focus {
   color: #7db48e;
+}
+header a {
+  font-weight: 600;
 }
 
 .lang-container {
@@ -44,9 +49,10 @@ header button:hover, header button:focus {
 }
 
 @media (max-width: 900px) {
-  header button {
+  header button, header a {
     font-size: 1rem;
-    padding-inline: 0.8em;
+    padding-inline: 0.5em;
+    margin-inline: 0.3em;
   }
 }
 

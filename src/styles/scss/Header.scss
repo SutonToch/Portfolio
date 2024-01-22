@@ -13,17 +13,23 @@ header {
         margin: 0 auto;
     }
 
-    button {
+    button, a {
         background-color: var.$clr-darkblue;
         color: var.$clr-white;
         border: none;
         font-size: 1.1rem;
-        padding-inline: 1.5em;
+        padding-inline: 1em;
+        margin-inline: 0.5em;
+        text-decoration: none;
         cursor: pointer;
 
         &:hover, &:focus {
             color: var.$clr-green;
         }
+    }
+
+    a {
+        font-weight: 600;
     }
 }
 
@@ -49,8 +55,9 @@ header {
 }
 
 @media (max-width: 900px) {
-    header button {
+    header button, header a {
         font-size: 1rem;
-        padding-inline: 0.8em;
+        padding-inline: 0.5em;
+        margin-inline: 0.3em;
     }
 }

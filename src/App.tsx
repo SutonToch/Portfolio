@@ -9,7 +9,7 @@ import {text_data} from './data/home_text.ts'
 
 export default function App() {
 
-  const [lang, setLang] = useState("EN")
+  const [lang, setLang] = useState("DE")
   const [page, setPage] = useState("Home")
   
   return (

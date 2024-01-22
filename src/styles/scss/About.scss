@@ -2,9 +2,7 @@
 
 .about {
     color: var.$clr-darkblue;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1em 0 3em;
+    background-color: var.$clr-lightgrey;
 }
 
 .about--headline {
@@ -12,6 +10,10 @@
 }
 
 .about--content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em 5em;
+    background-color: var.$clr-white;
     
     h2 {
         font-size: 2rem;
