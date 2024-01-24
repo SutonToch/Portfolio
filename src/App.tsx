@@ -4,7 +4,7 @@ import Header from './components/Header.tsx'
 import Home from './components/Home.tsx'
 import About from './components/About.tsx'
 import Footer from './components/Footer.tsx'
-import {text_data} from './data/home_text.ts'
+import {home_text_data} from './data/home_text.ts'
 
 
 export default function App() {
@@ -22,7 +22,7 @@ export default function App() {
       {page == "Home" ? <Home lang={lang} setPage={setPage}/> : ""}
       {page == "About" ? <About lang={lang}/> : ""}
       <Footer 
-          text_data = {lang == "EN" ? text_data.en.footer : text_data.de.footer}
+          text_data = {lang == "EN" ? home_text_data.en.footer : home_text_data.de.footer}
           setPage={setPage}
       />
     </>

@@ -1,5 +1,5 @@
 import './../styles/About.css'
-import { text_data } from './../data/about_text.ts'
+import { about_text_data } from './../data/about_text.ts'
 
 interface AboutProps {
     lang:string
@@ -7,7 +7,7 @@ interface AboutProps {
   
   export default function About(props:AboutProps) {
 
-    const current_text_data = props.lang == "EN" ? text_data.en : text_data.de
+    const current_text_data = props.lang == "EN" ? about_text_data.en : about_text_data.de
     const content = current_text_data.about_content.map((item) => {
       return(
         <div>

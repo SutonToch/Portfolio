@@ -15,6 +15,16 @@
 .slide-content-container {
   grid-row-end: span 2;
 }
+.slide-content-container .stack-container {
+  display: flex;
+  gap: 0.5em;
+  color: hsl(0, 0%, 95%);
+}
+.slide-content-container .stack-container div {
+  padding: 0.2em 0.6em;
+  border-radius: 20px;
+  background-color: hsl(245, 40%, 15%);
+}
 
 .slider-container {
   margin: 3em auto;

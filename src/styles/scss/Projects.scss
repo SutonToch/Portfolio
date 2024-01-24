@@ -18,6 +18,19 @@
 
 .slide-content-container {
     grid-row-end: span 2;
+
+    .stack-container {
+        display: flex;
+        gap: 0.5em;
+        color: var.$clr-white;
+
+        div {
+            padding: 0.2em 0.6em;
+            border-radius: 20px;
+            background-color: var.$clr-darkblue;
+        }
+        
+    }
 }
 
 .slider-container {

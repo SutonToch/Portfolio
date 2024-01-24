@@ -13,7 +13,7 @@
         justify-items: center;
         align-items: center;
         align-self: center;
-        grid-gap: 8em;
+        grid-gap: 4em;
     
         max-width: 1440px;
         margin: 0 auto;
@@ -24,7 +24,7 @@
     order: 1;
     border: 10px solid var.$clr-white;
     border-radius: 20px;
-    max-width: 500px;
+    max-width: 470px;
     overflow: hidden;
 
     &:hover, &:focus-visible {

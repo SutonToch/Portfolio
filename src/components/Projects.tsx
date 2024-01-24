@@ -8,9 +8,9 @@ import "slick-carousel/slick/slick-theme.css";
 interface SlideElement {
     title:string,
     imgPath:string,
-    stack:string,
+    stack:Array<string>,
     liveURL:string,
-    content:string
+    short:string
 }
 
 interface ProjectsText {
@@ -36,9 +36,12 @@ export default function Projects(props:ProjectsProps) {
 
     const slideContentElements = props.text_data.slides.map((slide) => {
         return(
-            <div className="slides__content" key={slide.content}>
+            <div className="slides__content" key={slide.short}>
                 <h2>{slide.title}</h2>
-                <p>{slide.content}</p>
+                <div className="stack-container">
+                    {slide.stack.map((stackElement) => <div>{stackElement}</div>)}
+                </div>
+                <p>{slide.short}</p>
             </div>
         )
     })
@@ -64,7 +67,6 @@ export default function Projects(props:ProjectsProps) {
                         {slideElements}
                     </Slider>
                 </div>
-                <></>
                 <a className="projects-btn" onClick={() => props.setPage("Projects")}>
                   <div className="projects-btn--content">
                     <img src={Projects_Icon} alt=""/>

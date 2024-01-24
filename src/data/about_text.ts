@@ -1,4 +1,4 @@
-export const text_data = {
+export const about_text_data = {
     "de": {
         // "headline": "IT liegt bei mir in der Familie",
         "about_content": [
