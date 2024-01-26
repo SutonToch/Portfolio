@@ -1,5 +1,6 @@
 .hero {
   display: flex;
+  position: relative;
   color: hsl(0, 0%, 95%);
   padding: 3em 5vw;
   background-color: hsl(245, 40%, 15%);
@@ -18,6 +19,8 @@
 
 .img-container {
   order: 1;
+  position: relative;
+  z-index: 1;
   border: 10px solid hsl(0, 0%, 95%);
   border-radius: 20px;
   max-width: 470px;

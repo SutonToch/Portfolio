@@ -1,0 +1,36 @@
+.moving-box {
+  position: absolute;
+  box-shadow: 0 0 6px 2px white;
+  right: 50%;
+  animation: move-box 20s -10s linear infinite;
+  background-color: hsl(245, 40%, 15%);
+}
+
+.small-moving-box {
+  position: absolute;
+  box-shadow: 0 0 2px 1px white;
+  background-color: hsl(245, 40%, 15%);
+}
+
+.medium-moving-box {
+  position: absolute;
+  box-shadow: 0 0 4px 2px white;
+  background-color: hsl(245, 40%, 15%);
+}
+
+.large-moving-box {
+  position: absolute;
+  box-shadow: 0 0 6px 3px white;
+  background-color: hsl(245, 40%, 15%);
+}
+
+@keyframes move-box {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 110%;
+  }
+}
+
+/*# sourceMappingURL=AnimatedBackground.css.map */

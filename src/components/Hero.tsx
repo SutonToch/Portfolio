@@ -1,6 +1,7 @@
 import './../styles/Hero.css'
 // import Me from './../assets/me.jpg'
 import Me from './../assets/me_two.jpg'
+import AnimatedBackground from './AnimatedBackground.tsx'
 // import About_Me_Icon from './../assets/icons/user_light.png'
 // import Contact_Icon from './../assets/icons/address-book_light.png'
 
@@ -42,6 +43,11 @@ export default function Hero(props:HeroProps) {
           </div>
         </a> */}
       </div>
+      <AnimatedBackground 
+        smallBoxCount={40}
+        mediumBoxCount={30}
+        largeBoxCount={20}
+      />
     </section>
   )
 }

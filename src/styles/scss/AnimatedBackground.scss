@@ -1,0 +1,36 @@
+@use 'variables' as var;
+
+.moving-box {
+    position: absolute;
+    box-shadow: 0 0 6px 2px white;
+    right: 50%;
+    animation: move-box 20s -10s linear infinite;
+    background-color: var.$clr-darkblue;
+}
+
+.small-moving-box {
+    position: absolute;
+    box-shadow: 0 0 2px 1px white;
+    background-color: var.$clr-darkblue;
+}
+
+.medium-moving-box {
+    position: absolute;
+    box-shadow: 0 0 4px 2px white;
+    background-color: var.$clr-darkblue;
+}
+
+.large-moving-box {
+    position: absolute;
+    box-shadow: 0 0 6px 3px white;
+    background-color: var.$clr-darkblue;
+}
+
+@keyframes move-box{
+    0% {
+      bottom: 0;
+    }
+    100% {
+      bottom: 110%;
+    }
+  }

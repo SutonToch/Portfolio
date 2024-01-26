@@ -2,6 +2,7 @@
 
 .hero {
     display: flex;
+    position: relative;
     color: var.$clr-white;
     padding: 3em 5vw;
     background-color: var.$clr-darkblue;
@@ -22,6 +23,8 @@
 
 .img-container {
     order: 1;
+    position: relative;
+    z-index: 1;
     border: 10px solid var.$clr-white;
     border-radius: 20px;
     max-width: 470px;
