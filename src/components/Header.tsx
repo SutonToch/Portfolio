@@ -18,8 +18,8 @@ export default function Header(props:HeaderProps) {
           <button onClick={() => props.setPage("Projects")}>{props.lang == "EN" ? "Projects" : "Projekte"}</button>
         </div>
         <div className="lang-container">
-          <button className={props.lang == "EN" ? "lang active" : "lang"} onClick={() => props.setLang("EN")}>EN</button>
           <button className={props.lang == "DE" ? "lang active" : "lang"} onClick={() => props.setLang("DE")}>DE</button>
+          <button className={props.lang == "EN" ? "lang active" : "lang"} onClick={() => props.setLang("EN")}>EN</button>
         </div>
       </div>
     </header>
