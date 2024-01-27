@@ -17,27 +17,27 @@ export default function AnimatedBackground(props:AnimatedBackgroundProps) {
     for(let i=0; i<props.smallBoxCount; i++) {
         let box = {
             class: 'small-moving-box',
-            x: `${(i+1)*smallXStep*(1.2-Math.random()*0.4)}%`,
-            duration: `${60*(1.2-Math.random()*0.4)}s`,
-            delay: `-${45*Math.random()}s`
+            x: `${(i+1)*smallXStep*(1.1-Math.random()*0.2)}%`,
+            duration: `${80*(1.2-Math.random()*0.4)}s`,
+            delay: `-${60*Math.random()}s`
         }
         movingBoxes.push(box)
     }
     for(let i=0; i<props.mediumBoxCount; i++) {
         let box = {
             class: 'medium-moving-box',
-            x: `${(i+1)*mediumXStep*(1.2-Math.random()*0.4)}%`,
-            duration: `${40*(1.2-Math.random()*0.4)}s`,
-            delay: `-${30*Math.random()}s`
+            x: `${(i+1)*mediumXStep*(1.1-Math.random()*0.2)}%`,
+            duration: `${50*(1.2-Math.random()*0.4)}s`,
+            delay: `-${35*Math.random()}s`
         }
         movingBoxes.push(box)
     }
     for(let i=0; i<props.largeBoxCount; i++) {
         let box = {
             class: 'large-moving-box',
-            x: `${(i+1)*largeXStep*(1.2-Math.random()*0.4)}%`,
-            duration: `${25*(1.2-Math.random()*0.4)}s`,
-            delay: `-${18*Math.random()}s`
+            x: `${(i+1)*largeXStep*(1.1-Math.random()*0.2)}%`,
+            duration: `${30*(1.2-Math.random()*0.4)}s`,
+            delay: `-${20*Math.random()}s`
         }
         movingBoxes.push(box)
     }
@@ -53,7 +53,6 @@ export default function AnimatedBackground(props:AnimatedBackgroundProps) {
 
   return (
     <>
-        {/* <div className="moving-box" /> */}
         {movingBoxElements}
     </>
   )

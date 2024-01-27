@@ -1,27 +1,22 @@
-.moving-box {
-  position: absolute;
-  box-shadow: 0 0 6px 2px white;
-  right: 50%;
-  animation: move-box 20s -10s linear infinite;
-  background-color: hsl(245, 40%, 15%);
-}
-
 .small-moving-box {
   position: absolute;
-  box-shadow: 0 0 2px 1px white;
-  background-color: hsl(245, 40%, 15%);
+  width: 1px;
+  height: 1px;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .medium-moving-box {
   position: absolute;
-  box-shadow: 0 0 4px 2px white;
-  background-color: hsl(245, 40%, 15%);
+  width: 2px;
+  height: 2px;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .large-moving-box {
   position: absolute;
-  box-shadow: 0 0 6px 3px white;
-  background-color: hsl(245, 40%, 15%);
+  width: 4px;
+  height: 4px;
+  background-color: hsl(0, 0%, 95%);
 }
 
 @keyframes move-box {
@@ -30,6 +25,7 @@
   }
   100% {
     bottom: 110%;
+    rotate: 400deg;
   }
 }
 
