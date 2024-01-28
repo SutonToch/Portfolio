@@ -5,6 +5,7 @@ header {
     inset: 0;
     background-color: var.$clr-darkblue;
     padding: 0.75em;
+    z-index: 2;
 
     .container {
         display: flex;
@@ -59,5 +60,6 @@ header {
         font-size: 1rem;
         padding-inline: 0.5em;
         margin-inline: 0.3em;
+        font-weight: 500;
     }
 }
