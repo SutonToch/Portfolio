@@ -10,7 +10,7 @@ interface SlideElement {
     imgPath:string,
     stack:Array<string>,
     liveURL:string,
-    short:string
+    short:Array<string>
 }
 
 interface ProjectsText {
@@ -29,7 +29,9 @@ export default function Projects(props:ProjectsProps) {
     const slideElements = props.text_data.slides.map((slide) => {
         return(
             <div className="slide" key={slide.title}>
-                <img src={slide.imgPath}/>
+                <a href={slide.liveURL} target={"_blank"}>
+                    <img src={slide.imgPath}/>
+                </a>
             </div>
         )
     })
@@ -41,7 +43,7 @@ export default function Projects(props:ProjectsProps) {
                 <div className="stack-container">
                     {slide.stack.map((stackElement) => <div>{stackElement}</div>)}
                 </div>
-                <p>{slide.short}</p>
+                {slide.short.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
         )
     })

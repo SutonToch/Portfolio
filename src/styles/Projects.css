@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  grid-column-gap: 8em;
+  grid-column-gap: 4em;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -47,27 +47,29 @@
   border-radius: 5px;
 }
 
+.slides__content {
+  text-wrap: balance;
+}
 .slides__content h2 {
   font-size: 2rem;
 }
 .slides__content p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .projects-btn {
   display: block;
   text-decoration: none;
   color: inherit;
-  width: 100%;
-  padding: 0.5em;
-  margin-top: 2em;
+  height: fit-content;
+  padding: 0.5em 8em;
+  align-self: self-end;
   border: 3px solid hsl(245, 40%, 15%);
   border-radius: 10px;
   cursor: pointer;
 }
 .projects-btn:hover, .projects-btn:focus-visible {
   border-color: #7db48e;
-  box-shadow: 0px 0px 5px #7db48e;
 }
 
 .projects-btn--content {
