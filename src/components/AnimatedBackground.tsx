@@ -17,6 +17,7 @@ export default function AnimatedBackground(props:AnimatedBackgroundProps) {
     for(let i=0; i<props.smallBoxCount; i++) {
         let box = {
             class: 'small-moving-box',
+            key: i,
             x: `${(i+1)*smallXStep*(1.1-Math.random()*0.2)}%`,
             duration: `${80*(1.2-Math.random()*0.4)}s`,
             delay: `-${60*Math.random()}s`
@@ -26,6 +27,7 @@ export default function AnimatedBackground(props:AnimatedBackgroundProps) {
     for(let i=0; i<props.mediumBoxCount; i++) {
         let box = {
             class: 'medium-moving-box',
+            key: i,
             x: `${(i+1)*mediumXStep*(1.1-Math.random()*0.2)}%`,
             duration: `${50*(1.2-Math.random()*0.4)}s`,
             delay: `-${35*Math.random()}s`
@@ -35,6 +37,7 @@ export default function AnimatedBackground(props:AnimatedBackgroundProps) {
     for(let i=0; i<props.largeBoxCount; i++) {
         let box = {
             class: 'large-moving-box',
+            key: i,
             x: `${(i+1)*largeXStep*(1.1-Math.random()*0.2)}%`,
             duration: `${30*(1.2-Math.random()*0.4)}s`,
             delay: `-${20*Math.random()}s`
@@ -47,7 +50,9 @@ export default function AnimatedBackground(props:AnimatedBackgroundProps) {
     const movingBoxElements = movingBoxes.map((box) => {
         return(
             <div className={box.class} 
-            style={{right: box.x, animation: `move-box ${box.duration} ${box.delay} linear infinite`}}/>
+            style={{right: box.x, animation: `move-box ${box.duration} ${box.delay} linear infinite`}}
+            key={box.class + box.key}
+            />
         )
     })
 

@@ -38,10 +38,10 @@ export default function Projects(props:ProjectsProps) {
 
     const slideContentElements = props.text_data.slides.map((slide) => {
         return(
-            <div className="slides__content" key={slide.short}>
+            <div className="slides__content" key={slide.title}>
                 <h2>{slide.title}</h2>
                 <div className="stack-container">
-                    {slide.stack.map((stackElement) => <div>{stackElement}</div>)}
+                    {slide.stack.map((stackElement) => <div key={stackElement}>{stackElement}</div>)}
                 </div>
                 {slide.short.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
