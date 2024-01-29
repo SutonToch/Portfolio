@@ -1,5 +1,7 @@
-import klickPic from "./../assets/portfolio_klick_400.png"
-import frontendMentorPic from "./../assets/frontend_mentor_logo.jpg"
+import klickPic from "./../assets/portfolio_klick_500.png"
+import cardPic from "./../assets/portfolio_card_500.png"
+import trPic from "./../assets/portfolio_tr_500.png"
+import portfolioPic from "./../assets/portfolio_hero_500.png"
 
 export const projects_text_data = {
     "de": {
@@ -22,7 +24,7 @@ export const projects_text_data = {
                 },
                 {
                     title: "Frontend Mentor - Kreditkarten-Details Formular",
-                    imgPath: frontendMentorPic,
+                    imgPath: cardPic,
                     stack: [
                         "React",
                         "Vite",
@@ -40,7 +42,7 @@ export const projects_text_data = {
                 },
                 {
                     title: "Frontend Mentor - Taschenrechner",
-                    imgPath: frontendMentorPic,
+                    imgPath: trPic,
                     stack: [
                         "JavaScript",
                         "CSS",
@@ -55,7 +57,7 @@ export const projects_text_data = {
                 },
                 {
                     title: "Portfolio",
-                    imgPath: frontendMentorPic,
+                    imgPath: portfolioPic,
                     stack: [
                         "React",
                         "Vite",
@@ -95,7 +97,7 @@ export const projects_text_data = {
                 },
                 {
                     title: "Frontend Mentor - Card Details Form",
-                    imgPath: frontendMentorPic,
+                    imgPath: cardPic,
                     stack: [
                         "React",
                         "Vite",
@@ -113,7 +115,7 @@ export const projects_text_data = {
                 },
                 {
                     title: "Frontend Mentor - Calculator",
-                    imgPath: frontendMentorPic,
+                    imgPath: trPic,
                     stack: [
                         "JavaScript",
                         "CSS",
@@ -128,7 +130,7 @@ export const projects_text_data = {
                 },
                 {
                     title: "Portfolio",
-                    imgPath: frontendMentorPic,
+                    imgPath: portfolioPic,
                     stack: [
                         "React",
                         "Vite",

@@ -29,7 +29,7 @@
 .slider-container {
   margin: 3em auto;
   max-width: 80%;
-  width: 400px;
+  width: 500px;
 }
 .slider-container .slide {
   display: flex !important;
