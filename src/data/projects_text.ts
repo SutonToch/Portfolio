@@ -77,7 +77,8 @@ export const projects_text_data = {
                 ]
             }
         ],
-        "btn_projects": "Projekte"
+        "btn_projects": "Mehr",
+        "title": "Meine Projekte"
     },
     "en": {
         "projects": [
@@ -152,6 +153,7 @@ export const projects_text_data = {
                 ]
             }
         ],
-        "btn_projects": "Projects"
+        "btn_projects": "More",
+        "title": "My Projects"
     }
 }

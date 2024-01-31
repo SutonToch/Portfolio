@@ -13,6 +13,7 @@ interface ProjectElement {
 interface ProjectsText {
     projects:Array<ProjectElement>
     btn_projects:string
+    title:string
 }
 
 interface ProjectsProps {
@@ -21,8 +22,6 @@ interface ProjectsProps {
 }
 
 export default function Projects(props:ProjectsProps) {
-
-    
 
     const projectElements = props.text_data.projects.map((project) => {
         return(
@@ -43,6 +42,7 @@ export default function Projects(props:ProjectsProps) {
 
     return (
         <section className="projects">
+            <h1 className="projects-title">{props.text_data.title}</h1>
             {projectElements}
         </section>
     )
