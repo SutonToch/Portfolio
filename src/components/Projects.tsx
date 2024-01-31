@@ -33,12 +33,11 @@ export default function Projects(props:ProjectsProps) {
                     {project.stack.map((x) => <div className="stack-element">{x}</div>)}
                 </div>
                 <button className="project-btn" onClick={() => props.setPage(project.state)}>
-                  <div className="project-btn--content">
                     <img src={Projects_Icon} alt=""/>
                     <p>{props.text_data.btn_projects}</p>
-                  </div>
                 </button>
-                <p>{project.short}</p>
+                <p className="project-short">{project.short}</p>
+                <img className="project-img" src={project.imgPath} alt=""/>
             </div>
         )
     })

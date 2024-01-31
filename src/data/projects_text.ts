@@ -11,26 +11,26 @@ export const projects_text_data = {
                 state: "Klick",
                 imgPath: klickPic,
                 stack: [
-                    "TypeScript",
+                    "Typescript",
                     "SCSS",
                     "HTML"
                 ],
                 liveURL: "https://sutontoch.github.io/Klick/",
                 short: [
-                    "Ein kurzes Browsergame, bei dem kleine Boxen erscheinen, die man anklicken muss, um Punkte zu bekommen. Das Ziel ist einfach: so viele Punkte wie möglich zu bekommen.", 
-                    "Nachdem ich JavaScript gelernt hatte, wollte ich mein Wissen in die Praxis umsetzen, und was wäre besser geeignet als ein Browsergame? Als zusätzliche Herausforderung entschied ich mich, TypeScript zu verwenden, um mich damit vertraut zu machen und es einfach auszuprobieren. Ursprünglich wollte ich aus diesem Browsergame etwas mehr machen, aber ich habe beschlossen, dass es seinen Zweck erfüllt hat und ich meine Zeit besser woanders investieren sollte.", 
+                    "Ein kurzes Browsergame, bei dem kleine Boxen erscheinen, die man anklicken muss, um Punkte zu bekommen. Das Ziel ist einfach: so viele Punkte wie möglich zu bekommen. ", 
+                    "Nachdem ich JavaScript gelernt hatte, wollte ich mein Wissen in die Praxis umsetzen, und was wäre besser geeignet als ein Browsergame? Als zusätzliche Herausforderung entschied ich mich, Typescript zu verwenden, um mich damit vertraut zu machen und es einfach auszuprobieren. Ursprünglich wollte ich aus diesem Browsergame etwas mehr machen, aber ich habe beschlossen, dass es seinen Zweck erfüllt hat und ich meine Zeit besser woanders investieren sollte. ", 
                     "Spaß macht es aber trotzdem! Wenn Sie ein paar Minuten Zeit haben, sollten Sie es selbst ausprobieren. Es gibt ein paar Tricks, um die Punktzahl zu erhöhen. Es würde mich interessieren, ob Sie es schaffen, über 100 oder sogar 500 Punkte zu kommen 🙂."
                 ]
             },
             {
-                title: "Frontend Mentor - Kreditkarten-Details Formular",
+                title: "Frontend Mentor - Kreditkarten Details Formular",
                 state: "Cards",
                 imgPath: cardPic,
                 stack: [
                     "React",
                     "Vite",
                     "npm",
-                    "TypeScript",
+                    "Typescript",
                     "SCSS",
                     "HTML"
                 ],
@@ -65,7 +65,7 @@ export const projects_text_data = {
                     "React",
                     "Vite",
                     "npm",
-                    "TypeScript",
+                    "Typescript",
                     "SCSS",
                     "HTML"
                 ],
@@ -86,14 +86,14 @@ export const projects_text_data = {
                 state: "Klick",
                 imgPath: klickPic,
                 stack: [
-                    "TypeScript",
+                    "Typescript",
                     "SCSS",
                     "HTML"
                 ],
                 liveURL: "https://sutontoch.github.io/Klick/",
                 short: [
                     "A short Browsergame, where boxes appear that you have to click to get points. The goal is simply to get as many points as possible.", 
-                    "After learning JavaScript, I wanted to put my knowledge into practice, and what better option than a Browsergame? For an added challenge, I decided to use TypeScript to get familiar with it, and simply try it out. Initially I wanted this Browsergame to be a little more than it turned out to be, but I decided that it served it's purpose and my time was better spend elsewhere.", 
+                    "After learning JavaScript, I wanted to put my knowledge into practice, and what better option than a Browsergame? For an added challenge, I decided to use Typescript to get familiar with it, and simply try it out. Initially I wanted this Browsergame to be a little more than it turned out to be, but I decided that it served it's purpose and my time was better spend elsewhere.", 
                     "It's still fun though! If you have a few minutes of spare time, consider trying it yourself. There are a few tricks to increase your score.. I'd be interested if you're able to get past 100 or even 500 score 🙂."
                 ]
             },
@@ -105,7 +105,7 @@ export const projects_text_data = {
                     "React",
                     "Vite",
                     "npm",
-                    "TypeScript",
+                    "Typescript",
                     "SCSS",
                     "HTML"
                 ],
@@ -140,7 +140,7 @@ export const projects_text_data = {
                     "React",
                     "Vite",
                     "npm",
-                    "TypeScript",
+                    "Typescript",
                     "SCSS",
                     "HTML"
                 ],
