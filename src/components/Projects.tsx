@@ -1,4 +1,3 @@
-import { SetStateAction, useState } from "react";
 import './../styles/Projects.css'
 import Projects_Icon from './../assets/icons/clipboard-text_darkblue.png'
 

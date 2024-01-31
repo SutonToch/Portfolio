@@ -1,7 +1,7 @@
-import klickPic from "./../assets/portfolio_klick_500.png"
-import cardPic from "./../assets/portfolio_card_500.png"
-import trPic from "./../assets/portfolio_tr_500.png"
-import portfolioPic from "./../assets/portfolio_hero_500.png"
+import klickPic from "./../assets/portfolio_klick_700.png"
+import cardPic from "./../assets/portfolio_card_700.png"
+import trPic from "./../assets/portfolio_tr_700.png"
+import portfolioPic from "./../assets/portfolio_hero_700.png"
 
 export const projects_text_data = {
     "de": {
