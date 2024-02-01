@@ -53,6 +53,7 @@
     grid-area: stack;
     display: flex;
     align-self: center;
+    cursor: default;
 
     .stack-element {
         color: var.$clr-white;
@@ -60,20 +61,27 @@
         border-radius: 50px;
         padding: 0.2em 0.6em;
         margin-right: 0.5em;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: var.$clr-green;
+        }
     }
 }
 
 .project-btn {
     grid-area: btn;
     display: flex;
-    align-self: center;
+    align-self: start;
     justify-content: center;
     font-size: 1.6rem;
     color: var.$clr-darkblue;
     border: 5px solid var.$clr-darkblue;
     border-radius: 100vw;
     padding: 0.4em 1em;
-    margin: 0 auto;    
+    margin: 0 auto;
+    background-color: var.$clr-white;
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;    
     cursor: pointer;
     
     p {
@@ -90,7 +98,6 @@
     &:hover, &:focus {
         color: var.$clr-green;
         border-color: var.$clr-green;
-        background-color: var.$clr-white;
     }
 }
 
