@@ -1,5 +1,10 @@
 @use 'variables' as var;
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .projects {
     color: var.$clr-darkblue;
     background-color: var.$clr-white;
@@ -7,19 +12,28 @@
 }
 
 .projects-title {
-    font-size: 2.5rem;
+    text-align: center;
+    font-size: 2.8rem;
 }
 
 .project-container {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-column-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4em;
     grid-template-areas:
     'title image'
     'stack image'
     'short image'
     'btn image';
-    min-height: 80vh;
+    min-height: 85vh;
+}
+
+.project-container:nth-child(odd) {
+    grid-template-areas:
+    'image title'
+    'image stack'
+    'image short'
+    'image btn';
 }
 
 .project-container:has(+.project-container) {
@@ -32,6 +46,7 @@
     text-wrap: balance;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    align-self: end;
 }
 
 .stack-container {
@@ -57,13 +72,9 @@
     color: var.$clr-darkblue;
     border: 5px solid var.$clr-darkblue;
     border-radius: 100vw;
-    padding: 0.1em 1em;
-    margin: 1em auto;    
+    padding: 0.4em 1em;
+    margin: 0 auto;    
     cursor: pointer;
-    
-    background: linear-gradient(to left, var.$clr-white 50%, var.$clr-green 50%) right;
-    background-size: 200%;
-    transition: background-position 1.5s ease-in-out;
     
     p {
         font-weight: bold;
@@ -76,8 +87,10 @@
         margin-right: 0.2em;  
     }
 
-    &:hover {
-        background-position: left;
+    &:hover, &:focus {
+        color: var.$clr-green;
+        border-color: var.$clr-green;
+        background-color: var.$clr-white;
     }
 }
 

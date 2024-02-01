@@ -1,3 +1,8 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .projects {
   color: hsl(245, 40%, 15%);
   background-color: hsl(0, 0%, 95%);
@@ -5,15 +10,20 @@
 }
 
 .projects-title {
-  font-size: 2.5rem;
+  text-align: center;
+  font-size: 2.8rem;
 }
 
 .project-container {
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-column-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4em;
   grid-template-areas: "title image" "stack image" "short image" "btn image";
-  min-height: 80vh;
+  min-height: 85vh;
+}
+
+.project-container:nth-child(odd) {
+  grid-template-areas: "image title" "image stack" "image short" "image btn";
 }
 
 .project-container:has(+ .project-container) {
@@ -26,6 +36,7 @@
   text-wrap: balance;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  align-self: end;
 }
 
 .stack-container {
@@ -50,12 +61,9 @@
   color: hsl(245, 40%, 15%);
   border: 5px solid hsl(245, 40%, 15%);
   border-radius: 100vw;
-  padding: 0.1em 1em;
-  margin: 1em auto;
+  padding: 0.4em 1em;
+  margin: 0 auto;
   cursor: pointer;
-  background: linear-gradient(to left, hsl(0, 0%, 95%) 50%, #7db48e 50%) right;
-  background-size: 200%;
-  transition: background-position 1.5s ease-in-out;
 }
 .project-btn p {
   font-weight: bold;
@@ -66,8 +74,10 @@
   width: 45px;
   margin-right: 0.2em;
 }
-.project-btn:hover {
-  background-position: left;
+.project-btn:hover, .project-btn:focus {
+  color: #7db48e;
+  border-color: #7db48e;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .project-short {
