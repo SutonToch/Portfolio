@@ -17,9 +17,9 @@ export const projects_text_data = {
                 ],
                 liveURL: "https://sutontoch.github.io/Klick/",
                 short: [
-                    "Ein kurzes Browsergame, bei dem kleine Boxen erscheinen, die man anklicken muss, um Punkte zu bekommen. Das Ziel ist einfach: so viele Punkte wie möglich zu bekommen. ", 
-                    "Nachdem ich JavaScript gelernt hatte, wollte ich mein Wissen in die Praxis umsetzen, und was wäre besser geeignet als ein Browsergame? Als zusätzliche Herausforderung entschied ich mich, Typescript zu verwenden, um mich damit vertraut zu machen und es einfach auszuprobieren. Ursprünglich wollte ich aus diesem Browsergame etwas mehr machen, aber ich habe beschlossen, dass es seinen Zweck erfüllt hat und ich meine Zeit besser woanders investieren sollte. ", 
-                    "Spaß macht es aber trotzdem! Wenn Sie ein paar Minuten Zeit haben, sollten Sie es selbst ausprobieren. Es gibt ein paar Tricks, um die Punktzahl zu erhöhen. Es würde mich interessieren, ob Sie es schaffen, über 100 oder sogar 500 Punkte zu kommen 🙂."
+                    "Ein kurzes Browsergame bei dem kleine Boxen erscheinen, die man anklicken muss um Punkte zu bekommen. Das Ziel ist einfach: so viele Punkte wie möglich erhalten.", 
+                    "Nachdem ich JavaScript gelernt hatte, wollte ich mein Wissen in die Praxis umsetzen, und was wäre besser geeignet als ein Browsergame? Als zusätzliche Herausforderung entschied ich mich das erste mal Typescript zu verwenden. Ursprünglich wollte ich aus diesem Browsergame etwas mehr machen, aber ich habe beschlossen, dass es seinen Zweck erfüllt hat und ich meine Zeit besser woanders investieren sollte.", 
+                    "Wer ein paar Minuten freie Zeit hat, sollte es mal ausprobieren 🙂. Es gibt ein paar Tricks, um die Punktzahl zu erhöhen. 100 Punkte ist bereits beachtlich, aber wer 500 Punkte schafft, ist wirklich gut."
                 ]
             },
             {

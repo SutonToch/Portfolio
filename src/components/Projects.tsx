@@ -25,7 +25,7 @@ export default function Projects(props:ProjectsProps) {
 
     const projectElements = props.text_data.projects.map((project) => {
         return(
-            <div className="project-container">
+            <article className="project-container">
                 <h2 className="project-title">{project.title}</h2>
                 <div className="stack-container">
                     {project.stack.map((x) => <div className="stack-element">{x}</div>)}
@@ -34,9 +34,11 @@ export default function Projects(props:ProjectsProps) {
                     {/* <img src={Projects_Icon} alt=""/> */}
                     <p>{props.text_data.btn_projects}</p>
                 </button>
-                <p className="project-short">{project.short}</p>
+                <div className="project-short">
+                    {project.short.map((paragraph) => <p>{paragraph}</p>)}
+                </div>
                 <img className="project-img" src={project.imgPath} alt=""/>
-            </div>
+            </article>
         )
     })
 
