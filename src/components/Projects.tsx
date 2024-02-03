@@ -1,5 +1,4 @@
 import './../styles/Projects.css'
-// import Projects_Icon from './../assets/icons/clipboard-text.svg'
 
 interface ProjectElement {
     title:string,
@@ -30,10 +29,17 @@ export default function Projects(props:ProjectsProps) {
                 <div className="stack-container">
                     {project.stack.map((x) => <div className="stack-element">{x}</div>)}
                 </div>
-                <button className="project-btn" onClick={() => props.setPage(project.state)}>
-                    {/* <img src={Projects_Icon} alt=""/> */}
-                    <p>{props.text_data.btn_projects}</p>
-                </button>
+                <div className="project-btns">
+                    <button className="project-btn" onClick={() => props.setPage(project.state)}>
+                        {props.text_data.btn_projects}
+                    </button>
+                    {project.liveURL != "" ? 
+                        <a href={project.liveURL}>
+                            <button className="project-btn">Live</button>
+                        </a> : 
+                        <></>
+                    }
+                </div>
                 <div className="project-short">
                     {project.short.map((paragraph) => <p>{paragraph}</p>)}
                 </div>
