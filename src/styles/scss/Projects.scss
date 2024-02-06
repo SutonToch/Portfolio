@@ -9,6 +9,10 @@
     color: var.$clr-darkblue;
     background-color: var.$clr-white;
     padding: 3em 5vw;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .projects-title {
@@ -21,19 +25,19 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 4em;
     grid-template-areas:
-    'title image'
+    'title filler'
     'stack image'
     'short image'
-    'btn image';
+    'btn start';
     min-height: 85vh;
 }
 
 .project-container:nth-child(odd) {
     grid-template-areas:
-    'image title'
+    'filler title'
     'image stack'
     'image short'
-    'image btn';
+    'start btn';
 }
 
 .project-container:has(+.project-container) {
@@ -47,6 +51,10 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
     align-self: end;
+}
+
+.project-filler {
+    grid-area: filler;
 }
 
 .stack-container {
@@ -84,7 +92,7 @@
     grid-area: btn;
     display: flex;
     align-self: start;
-    justify-content: center;
+    margin: 0 auto;
     font-size: 1.6rem;
     font-weight: bold;
     color: var.$clr-darkblue;
@@ -99,6 +107,11 @@
         color: var.$clr-green;
         border-color: var.$clr-green;
     }
+}
+
+.project-start {
+    grid-area: start;
+    margin: 0 auto;
 }
 
 .project-short {
@@ -123,8 +136,10 @@
         'title'
         'stack'
         'image'
+        'start'
         'short'
         'btn' !important;
+        grid-column-gap: 0;
     }
 
     .project-title {
@@ -132,7 +147,7 @@
     }
 
     .project-img {
-        margin-top: 1em;
+        margin-block: 1em;
     }
 
     .project-short {
@@ -141,7 +156,7 @@
         margin: 0 auto;
     }
 
-    .project-btn {
+    .project-btn, .project-start {
         font-size: 1.3rem;
         border-width: 4px;
     }

@@ -26,20 +26,19 @@ export default function Projects(props:ProjectsProps) {
         return(
             <article className="project-container">
                 <h2 className="project-title">{project.title}</h2>
+                <div className="project-filler"></div>
                 <div className="stack-container">
                     {project.stack.map((x) => <div className="stack-element">{x}</div>)}
                 </div>
-                <div className="project-btns">
-                    <button className="project-btn" onClick={() => props.setPage(project.state)}>
-                        {props.text_data.btn_projects}
-                    </button>
-                    {project.liveURL != "" ? 
-                        <a href={project.liveURL}>
-                            <button className="project-btn">Live</button>
-                        </a> : 
-                        <></>
-                    }
-                </div>
+                <button className="project-btn" onClick={() => props.setPage(project.state)}>
+                    {props.text_data.btn_projects}
+                </button>
+                {project.liveURL != "" ? 
+                    <a className="project-start" href={project.liveURL} target={'_blank'}>
+                        <button className="project-btn">Start</button>
+                    </a> : 
+                    <></>
+                }
                 <div className="project-short">
                     {project.short.map((paragraph) => <p>{paragraph}</p>)}
                 </div>

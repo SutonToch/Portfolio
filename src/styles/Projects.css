@@ -8,6 +8,9 @@
   background-color: hsl(0, 0%, 95%);
   padding: 3em 5vw;
 }
+.projects a {
+  text-decoration: none;
+}
 
 .projects-title {
   text-align: center;
@@ -18,12 +21,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 4em;
-  grid-template-areas: "title image" "stack image" "short image" "btn image";
+  grid-template-areas: "title filler" "stack image" "short image" "btn start";
   min-height: 85vh;
 }
 
 .project-container:nth-child(odd) {
-  grid-template-areas: "image title" "image stack" "image short" "image btn";
+  grid-template-areas: "filler title" "image stack" "image short" "start btn";
 }
 
 .project-container:has(+ .project-container) {
@@ -37,6 +40,10 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
   align-self: end;
+}
+
+.project-filler {
+  grid-area: filler;
 }
 
 .stack-container {
@@ -71,7 +78,7 @@
   grid-area: btn;
   display: flex;
   align-self: start;
-  justify-content: center;
+  margin: 0 auto;
   font-size: 1.6rem;
   font-weight: bold;
   color: hsl(245, 40%, 15%);
@@ -85,6 +92,11 @@
 .project-btn:hover, .project-btn:focus {
   color: #7db48e;
   border-color: #7db48e;
+}
+
+.project-start {
+  grid-area: start;
+  margin: 0 auto;
 }
 
 .project-short {
@@ -104,20 +116,21 @@
   }
   .project-container {
     grid-template-columns: 1fr;
-    grid-template-areas: "title" "stack" "image" "short" "btn" !important;
+    grid-template-areas: "title" "stack" "image" "start" "short" "btn" !important;
+    grid-column-gap: 0;
   }
   .project-title {
     font-size: 1.8rem;
   }
   .project-img {
-    margin-top: 1em;
+    margin-block: 1em;
   }
   .project-short {
     font-size: 1.1rem;
     text-align: center;
     margin: 0 auto;
   }
-  .project-btn {
+  .project-btn, .project-start {
     font-size: 1.3rem;
     border-width: 4px;
   }
