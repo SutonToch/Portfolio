@@ -44,6 +44,11 @@ header a {
   cursor: pointer;
 }
 
+.separator {
+  width: 1px;
+  border: 1px solid hsl(220, 30%, 90%);
+}
+
 .active {
   outline: 1px solid hsl(0, 0%, 95%);
   border-radius: 5px;
@@ -55,6 +60,12 @@ header a {
     padding-inline: 0.5em;
     margin-inline: 0.3em;
     font-weight: 500;
+  }
+  .lang-container {
+    align-items: center;
+  }
+  .separator {
+    height: 50%;
   }
 }
 

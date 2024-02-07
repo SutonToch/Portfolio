@@ -50,6 +50,11 @@ header {
     cursor: pointer;
 }
 
+.separator {
+    width: 1px;
+    border: 1px solid var.$clr-lightgrey;
+}
+
 .active {
     outline: 1px solid var.$clr-white;
     border-radius: 5px;
@@ -61,5 +66,13 @@ header {
         padding-inline: 0.5em;
         margin-inline: 0.3em;
         font-weight: 500;
+    }
+
+    .lang-container {
+        align-items: center;
+    }
+
+    .separator {
+        height: 50%;
     }
 }
