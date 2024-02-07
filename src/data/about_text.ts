@@ -1,6 +1,6 @@
 export const about_text_data = {
     "de": {
-        // "headline": "IT liegt bei mir in der Familie",
+        "headline": "Über mich",
         "about_content": [
             {
                 "header": "Hintergrund",
@@ -25,7 +25,7 @@ export const about_text_data = {
         ]
     },
     "en": {
-        // "headline": "IT is in my Family",
+        "headline": "About me",
         "about_content": [
             {
                 "header": "Background",
