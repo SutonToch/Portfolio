@@ -17,7 +17,7 @@ export default function Home(props:HomeProps) {
           setPage={props.setPage}
         />
         <Projects 
-          text_data = {props.lang == "EN" ? projects_text_data.en.projects : projects_text_data.de.projects}
+          text_data = {props.lang == "EN" ? projects_text_data.en : projects_text_data.de}
           setPage={props.setPage}
         />
     </>

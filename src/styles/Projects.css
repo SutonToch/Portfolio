@@ -1,111 +1,138 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .projects {
   color: hsl(245, 40%, 15%);
   background-color: hsl(0, 0%, 95%);
   padding: 3em 5vw;
 }
-.projects .grid-container {
+.projects a {
+  text-decoration: none;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.project-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
   grid-column-gap: 4em;
-  max-width: 1440px;
-  margin: 0 auto;
+  grid-template-areas: "title filler" "stack image" "short image" "btn start";
+  min-height: 85vh;
 }
 
-.slide-content-container {
-  grid-row-end: span 2;
-}
-.slide-content-container .stack-container {
-  display: flex;
-  gap: 0.5em;
-  color: hsl(0, 0%, 95%);
-}
-.slide-content-container .stack-container div {
-  padding: 0.2em 0.6em;
-  border-radius: 20px;
-  background-color: hsl(245, 40%, 15%);
+.project-container:nth-child(odd) {
+  grid-template-areas: "filler title" "image stack" "image short" "start btn";
 }
 
-.slider-container {
-  margin: 3em auto;
-  max-width: 80%;
-  width: 500px;
-}
-.slider-container .slide {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.slider-container .slick-slider div {
-  height: 300px;
-}
-.slider-container button::before {
-  color: hsl(245, 40%, 15%) !important;
-}
-.slider-container img {
-  border-radius: 5px;
+.project-container:has(+ .project-container) {
+  margin-bottom: 3em;
 }
 
-.slides__content {
-  text-wrap: balance;
-}
-.slides__content h2 {
+.project-title {
+  grid-area: title;
   font-size: 2rem;
-}
-.slides__content p {
-  font-size: 1.2rem;
+  text-wrap: balance;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  align-self: end;
 }
 
-.projects-btn {
-  display: block;
+.project-filler {
+  grid-area: filler;
+}
+
+.stack-container {
+  grid-area: stack;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  cursor: default;
+}
+.stack-container .stack-element {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(245, 40%, 15%);
+  border-radius: 50px;
+  padding: 0.2em 0.6em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  transition: background-color 0.3s ease-in-out;
+}
+.stack-container .stack-element:hover {
+  background-color: #7db48e;
+}
+
+.project-btns {
+  display: flex;
+  justify-content: space-around;
+}
+.project-btns a {
   text-decoration: none;
-  color: inherit;
-  height: fit-content;
-  padding: 0.5em 8em;
-  align-self: self-end;
-  border: 3px solid hsl(245, 40%, 15%);
-  border-radius: 10px;
+}
+
+.project-btn {
+  grid-area: btn;
+  display: flex;
+  align-self: start;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: hsl(245, 40%, 15%);
+  border: 5px solid hsl(245, 40%, 15%);
+  border-radius: 100vw;
+  padding: 0.4em 1em;
+  background-color: hsl(0, 0%, 95%);
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
   cursor: pointer;
 }
-.projects-btn:hover, .projects-btn:focus-visible {
+.project-btn:hover, .project-btn:focus {
+  color: #7db48e;
   border-color: #7db48e;
 }
 
-.projects-btn--content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  text-align: center;
-}
-.projects-btn--content img {
-  margin-right: 0.5em;
-  width: 36px;
-  height: 36px;
-}
-.projects-btn--content p {
-  font-weight: bold;
-  margin: 0;
+.project-start {
+  grid-area: start;
+  margin: 0 auto;
 }
 
-@media (max-width: 900px) {
-  .projects .grid-container {
+.project-short {
+  grid-area: short;
+  font-size: 1.2rem;
+}
+
+.project-img {
+  grid-area: image;
+  align-self: center;
+  justify-self: center;
+}
+
+@media (max-width: 1100px) {
+  .projects-title {
+    font-size: 2.2rem;
+  }
+  .project-container {
     grid-template-columns: 1fr;
-    grid-gap: 1em;
+    grid-template-areas: "title" "stack" "image" "start" "short" "btn" !important;
+    grid-column-gap: 0;
   }
-  .slide-content-container {
-    order: 1;
+  .project-title {
+    font-size: 1.8rem;
   }
-  .slider-container {
-    width: 60vw;
-    margin: 0;
+  .project-img {
+    margin-block: 1em;
   }
-  .slider-container .slick-slider div {
-    height: 250px;
+  .project-short {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 auto;
   }
-  .projects-btn {
-    order: 2;
+  .project-btn, .project-start {
+    font-size: 1.3rem;
+    border-width: 4px;
   }
 }
 
