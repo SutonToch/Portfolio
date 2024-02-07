@@ -11,8 +11,9 @@ interface ProjectElement {
 
 interface ProjectsText {
     projects:Array<ProjectElement>
-    btn_projects:string
     title:string
+    btn_projects:string
+    btn_start:string
 }
 
 interface ProjectsProps {
@@ -35,7 +36,7 @@ export default function Projects(props:ProjectsProps) {
                 </button>
                 {project.liveURL != "" ? 
                     <a className="project-start" href={project.liveURL} target={'_blank'}>
-                        <button className="project-btn">Start</button>
+                        <button className="project-btn">{props.text_data.btn_start}</button>
                     </a> : 
                     <></>
                 }
