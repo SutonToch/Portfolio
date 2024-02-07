@@ -2,7 +2,7 @@ export const home_text_data = {
     "de": {
         "hero": {
             "greeting_header": "Hi, ich bin Paul Pfütze.",
-            "greeting_content": "Ein Bachelor-Informatiker und ehemaliger stellvertretender Projektleiter im Bereich der Klimatechnologien. In meinem Arbeitsumfeld ist für mich gute und ehrliche Kommunikation sehr wichtig. Ich habe eine große Leidenschaft fürs Lernen, Tabletop-Rollenspiele, Videospiele und fürs Kochen. Falls ich Ihr Interesse geweckt habe, können Sie sich gerne mehr über mich durchlesen oder meine Projekte anschauen. Ich freue mich darauf, Sie kennenlernen zu können 🙂.",
+            "greeting_content": "Ein Bachelor-Informatiker und ehemaliger stellvertretender Projektleiter im Bereich der Klimatechnologien. In meinem Arbeitsumfeld ist für mich gute und ehrliche Kommunikation sehr wichtig. Ich habe eine große Leidenschaft für das Lernen, Tabletop-Rollenspiele, Videospiele und für das Kochen. Falls ich Ihr Interesse geweckt habe, können Sie sich gerne mehr über mich durchlesen oder meine Projekte anschauen. Ich freue mich darauf, Sie kennenlernen zu dürfen 🙂.",
             "btn_about": "Über mich",
             "btn_contact": "Kontakt"
         },
