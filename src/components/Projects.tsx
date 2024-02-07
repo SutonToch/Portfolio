@@ -18,7 +18,7 @@ interface ProjectsText {
 
 interface ProjectsProps {
   text_data:ProjectsText
-  setPage:React.Dispatch<React.SetStateAction<string>>
+  changePage:(destination: string) => void
 }
 
 export default function Projects(props:ProjectsProps) {
@@ -31,7 +31,7 @@ export default function Projects(props:ProjectsProps) {
                 <div className="stack-container">
                     {project.stack.map((x) => <div className="stack-element">{x}</div>)}
                 </div>
-                <button className="project-btn" onClick={() => props.setPage(project.state)}>
+                <button className="project-btn" onClick={() => props.changePage(project.state)}>
                     {props.text_data.btn_projects}
                 </button>
                 {project.liveURL != "" ? 

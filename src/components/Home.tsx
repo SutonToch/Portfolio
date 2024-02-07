@@ -5,7 +5,7 @@ import { projects_text_data } from '../data/projects_text.ts'
 
 interface HomeProps {
     lang:string
-    setPage:React.Dispatch<React.SetStateAction<string>>
+    changePage:(destination: string) => void
 }
 
 export default function Home(props:HomeProps) {
@@ -14,11 +14,10 @@ export default function Home(props:HomeProps) {
     <>
         <Hero 
           text_data = {props.lang == "EN" ? home_text_data.en.hero : home_text_data.de.hero}
-          setPage={props.setPage}
         />
         <Projects 
           text_data = {props.lang == "EN" ? projects_text_data.en : projects_text_data.de}
-          setPage={props.setPage}
+          changePage={props.changePage}
         />
     </>
   )

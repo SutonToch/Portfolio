@@ -3,7 +3,7 @@ header {
   inset: 0;
   background-color: hsl(245, 40%, 15%);
   padding: 0.75em;
-  z-index: 2;
+  z-index: 3;
 }
 header .container {
   display: flex;

@@ -2,7 +2,7 @@ import './../styles/Header.css'
 
 interface HeaderProps {
   lang:string
-  setPage:React.Dispatch<React.SetStateAction<string>>
+  changePage:(destination: string) => void
   setLang:React.Dispatch<React.SetStateAction<string>>
 }
 
@@ -12,8 +12,8 @@ export default function Header(props:HeaderProps) {
     <header>
       <div className="container">
         <div>
-          <button onClick={() => props.setPage("Home")}>{props.lang == "EN" ? "Home" : "Startseite"}</button>
-          <button onClick={() => props.setPage("About")}>{props.lang == "EN" ? "About me" : "Über mich"}</button>
+          <button onClick={() => props.changePage("Home")}>{props.lang == "EN" ? "Home" : "Startseite"}</button>
+          <button onClick={() => props.changePage("About")}>{props.lang == "EN" ? "About me" : "Über mich"}</button>
           <a href="mailto:n.suton@web.de">{props.lang == "EN" ? "Contact" : "Kontakt"}</a>
         </div>
         <div className="lang-container">

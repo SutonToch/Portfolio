@@ -11,7 +11,6 @@ interface HeroText {
 
 interface HeroProps {
   text_data:HeroText
-  setPage:React.Dispatch<React.SetStateAction<string>>
 }
 
 export default function Hero(props:HeroProps) {

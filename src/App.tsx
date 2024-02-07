@@ -11,19 +11,24 @@ export default function App() {
 
   const [lang, setLang] = useState("DE")
   const [page, setPage] = useState("Home")
+
+  function changePage(destination:string) {
+    window.scrollTo(0, 0);
+    setPage(destination)
+  }
   
   return (
     <>
       <Header 
-          setPage={setPage}
+          changePage={changePage}
           lang={lang}
           setLang={setLang}
       />
-      {page == "Home" ? <Home lang={lang} setPage={setPage}/> : ""}
+      {page == "Home" ? <Home lang={lang} changePage={changePage}/> : ""}
       {page == "About" ? <About lang={lang}/> : ""}
       <Footer 
           text_data = {lang == "EN" ? home_text_data.en.footer : home_text_data.de.footer}
-          setPage={setPage}
+          changePage={changePage}
       />
     </>
   )
