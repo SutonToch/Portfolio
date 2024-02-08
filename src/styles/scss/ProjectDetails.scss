@@ -1,0 +1,33 @@
+@use 'variables' as var;
+
+.project-details {
+    color: var.$clr-darkblue;
+    background-color: var.$clr-lightgrey;
+
+    .stack-container {
+        justify-content: center;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+    .project-btn {
+        margin-top: 1em;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.project-details-content-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var.$clr-white;
+    padding: 2em;
+}

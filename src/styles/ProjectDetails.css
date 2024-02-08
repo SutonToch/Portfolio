@@ -1,0 +1,28 @@
+.project-details {
+  color: hsl(245, 40%, 15%);
+  background-color: hsl(220, 30%, 90%);
+}
+.project-details .stack-container {
+  justify-content: center;
+}
+.project-details img {
+  margin: 0 auto;
+}
+.project-details .project-btn {
+  margin-top: 1em;
+}
+.project-details h2 {
+  font-size: 2rem;
+}
+.project-details p {
+  font-size: 1.2rem;
+}
+
+.project-details-content-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 95%);
+  padding: 2em;
+}
+
+/*# sourceMappingURL=ProjectDetails.css.map */
