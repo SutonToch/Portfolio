@@ -21,6 +21,16 @@ export default function App() {
     window.scrollTo(0, 0);
     setPage(destination)
   }
+
+  function shiftActiveProjectDetailsIndex(shift:number) {
+    let targetIndex = activeProjectDetailsIndex + shift;
+    if(targetIndex == projectsDetailStates.length) {
+      targetIndex = 0;
+    } else if(targetIndex < 0) {
+      targetIndex = projectsDetailStates.length-1;
+    }
+    changePage(projectsDetailStates[targetIndex])
+  }
   
   return (
     <>
@@ -40,6 +50,7 @@ export default function App() {
           btn_start={lang == "EN" ?
             projects_text_data.en.btn_start : projects_text_data.de.btn_start
           }
+          shiftActiveProjectDetailsIndex={shiftActiveProjectDetailsIndex}
         /> : ""}
       <Footer 
           text_data = {lang == "EN" ? home_text_data.en.footer : home_text_data.de.footer}
