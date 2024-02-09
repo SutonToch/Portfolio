@@ -37,6 +37,9 @@ export default function App() {
             projects_text_data.en.projects[activeProjectDetailsIndex] : 
             projects_text_data.de.projects[activeProjectDetailsIndex]
           }
+          btn_start={lang == "EN" ?
+            projects_text_data.en.btn_start : projects_text_data.de.btn_start
+          }
         /> : ""}
       <Footer 
           text_data = {lang == "EN" ? home_text_data.en.footer : home_text_data.de.footer}

@@ -11,6 +11,7 @@ interface ProjectElement {
 
 interface ProjectDetailsProps {
     details:ProjectElement
+    btn_start:string
 }
 
 export default function ProjectDetails(props:ProjectDetailsProps) {
@@ -24,7 +25,7 @@ export default function ProjectDetails(props:ProjectDetailsProps) {
             </div>
             <img src={props.details.imgPath} alt=""/>
             <button className="project-btn">
-                placeholder
+                {props.btn_start}
             </button>
             <h2>Placeholder Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!</p>
