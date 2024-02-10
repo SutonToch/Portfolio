@@ -1,5 +1,10 @@
 import './../styles/ProjectDetails.css'
 
+interface DetailItem {
+    title:string,
+    content:string
+}
+
 interface ProjectElement {
     title:string,
     state:string,
@@ -7,6 +12,7 @@ interface ProjectElement {
     stack:Array<string>,
     liveURL:string,
     short:Array<string>
+    details:Array<DetailItem>
 }
 
 interface ProjectDetailsProps {
@@ -16,6 +22,15 @@ interface ProjectDetailsProps {
 }
 
 export default function ProjectDetails(props:ProjectDetailsProps) {
+
+    const projectElements = props.details.details.map((detailItem) => {
+        return(
+            <div>
+                <h2>{detailItem.title}</h2>
+                <p>{detailItem.content}</p>
+            </div>
+        )
+    })
 
     return (
         <main className="project-details">
@@ -32,12 +47,7 @@ export default function ProjectDetails(props:ProjectDetailsProps) {
                 <button className="project-btn">
                     {props.btn_start}
                 </button>
-                <h2>Placeholder Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!</p>
-                <h2>Placeholder Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!</p>
-                <h2>Placeholder Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!</p>
+                {projectElements}
             </div>
         </main>
     )
