@@ -12,8 +12,8 @@
         margin: 0 auto;
     }
 
-    .project-btn {
-        margin-top: 1em;
+    .project-start {
+        margin: 1em 0 0;
     }
 
     h2 {
@@ -61,5 +61,14 @@
     :last-child {
         border-right: 5px solid var.$clr-darkblue;
         border-top: 5px solid var.$clr-darkblue;
+    }
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
     }
 }

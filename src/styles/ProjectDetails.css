@@ -8,8 +8,8 @@
 .project-details img {
   margin: 0 auto;
 }
-.project-details .project-btn {
-  margin-top: 1em;
+.project-details .project-start {
+  margin: 1em 0 0;
 }
 .project-details h2 {
   font-size: 2rem;
@@ -51,6 +51,14 @@
 .project-title-container :last-child {
   border-right: 5px solid hsl(245, 40%, 15%);
   border-top: 5px solid hsl(245, 40%, 15%);
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn-wrapper a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=ProjectDetails.css.map */

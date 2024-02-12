@@ -11,6 +11,7 @@ interface ProjectElement {
     imgPath:string,
     stack:Array<string>,
     liveURL:string,
+    github:string,
     short:Array<string>
     details:Array<DetailItem>
 }
@@ -44,9 +45,19 @@ export default function ProjectDetails(props:ProjectDetailsProps) {
                         {props.details.stack.map((x) => <div className="stack-element">{x}</div>)}
                 </div>
                 <img src={props.details.imgPath} alt=""/>
-                <button className="project-btn">
-                    {props.btn_start}
-                </button>
+                <div className="btn-wrapper">
+                    {props.details.liveURL != "" ? 
+                        <a className="project-start" href={props.details.liveURL} target={'_blank'}>
+                            <button className="project-btn">{props.btn_start}</button>
+                        </a> : 
+                        <></>
+                    }
+                    <a className="project-start" href={props.details.github} target="_blank">
+                        <button className="project-btn">
+                            Code
+                        </button>
+                    </a>
+                </div>
                 {projectElements}
             </div>
         </main>
