@@ -72,3 +72,28 @@
         text-decoration: none;
     }
 }
+
+@media (max-width: 1100px) {
+    .project-title-container {
+        .arrow {
+            width: 20px;
+            height: 20px;
+        }
+
+        :first-child {
+            translate: -20px 0;
+        }
+
+        :last-child {
+            translate: 20px 0;
+        }
+    }
+
+    .btn-wrapper {
+        display: block;
+
+        .project-btn {
+            margin-top: 0.5em;
+        }
+    }
+}

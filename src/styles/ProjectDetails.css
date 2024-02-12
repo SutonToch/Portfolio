@@ -61,4 +61,23 @@
   text-decoration: none;
 }
 
+@media (max-width: 1100px) {
+  .project-title-container .arrow {
+    width: 20px;
+    height: 20px;
+  }
+  .project-title-container :first-child {
+    translate: -20px 0;
+  }
+  .project-title-container :last-child {
+    translate: 20px 0;
+  }
+  .btn-wrapper {
+    display: block;
+  }
+  .btn-wrapper .project-btn {
+    margin-top: 0.5em;
+  }
+}
+
 /*# sourceMappingURL=ProjectDetails.css.map */
