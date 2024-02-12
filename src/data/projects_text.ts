@@ -18,7 +18,7 @@ export const projects_text_data = {
                 liveURL: "https://sutontoch.github.io/Klick/",
                 short: [
                     "Ein kurzes Browsergame, bei dem kleine Boxen erscheinen, die man anklicken muss, um Punkte zu bekommen. Das Ziel ist einfach: so viele Punkte wie möglich erhalten.", 
-                    "Nachdem ich JavaScript gelernt hatte, wollte ich mein Wissen in die Praxis umsetzen. Als zusätzliche Herausforderung entschied ich mich, das erste Mal TypeScript zu verwenden. Ursprünglich wollte ich aus diesem Browsergame etwas mehr machen, aber ich habe beschlossen, dass es seinen Zweck erfüllt hat und ich meine Zeit besser woanders investieren sollte.", 
+                    "Nachdem ich React gelernt hatte, wollte ich mein Wissen in die Praxis umsetzen. Dabei stieß ich aber auf einige Probleme, weswegen das Projekt am Ende ohne React geschrieben wurde. Als zusätzliche Herausforderung entschied ich mich, das erste Mal TypeScript zu verwenden. Ursprünglich wollte ich aus diesem Browsergame etwas mehr machen, aber ich habe beschlossen, dass es seinen Zweck erfüllt hat und ich meine Zeit besser woanders investieren sollte.", 
                     "Wer ein paar Minuten freie Zeit hat, sollte es mal ausprobieren 🙂. Es gibt ein paar Tricks, um die Punktzahl zu erhöhen. 100 Punkte sind bereits beachtlich, aber wer 500 Punkte schafft, ist wirklich gut."
                 ],
                 details: [
@@ -119,7 +119,7 @@ export const projects_text_data = {
                 liveURL: "https://sutontoch.github.io/Klick/",
                 short: [
                     "A short browser game in which small boxes appear that you have to click on to get points. The goal is simple: get as many points as possible.", 
-                    "After learning JavaScript, I wanted to put my knowledge into practice. As an additional challenge, I decided to use TypeScript for the first time. Originally, I wanted to make something more out of this browser game, but I decided that it had served its purpose and I would be better off investing my time elsewhere.", 
+                    "After learning React, I wanted to put my knowledge into practice. However, I ran into a few problems, which is why the project ended up being written without React. As an additional challenge, I decided to use TypeScript for the first time. Originally, I wanted to make something more out of this browser game, but I decided that it had served its purpose and I would be better off investing my time elsewhere.", 
                     "If you have a few minutes of free time, you should give it a try 🙂. There are a few tricks to increase your score. 100 points is already impressive, but anyone who manages 500 points probably mastered the game."
                 ],
                 details: [
