@@ -9,8 +9,7 @@ export const home_text_data = {
         "footer": {
             "content": "Code und Design von Paul Pfütze",
             "btn_about": "Über mich",
-            "btn_contact": "Kontakt",
-            "btn_projects": "Projekte"
+            "btn_contact": "Kontakt"
         }
     },
     "en": {
@@ -23,8 +22,7 @@ export const home_text_data = {
         "footer": {
             "content": "Code and Design by Paul Pfütze",
             "btn_about": "About me",
-            "btn_contact": "Contact",
-            "btn_projects": "Projects"
+            "btn_contact": "Contact"
         }
     }
 }

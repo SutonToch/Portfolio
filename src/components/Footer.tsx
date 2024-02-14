@@ -4,7 +4,6 @@ interface FooterText {
     content:string
     btn_about:string
     btn_contact:string
-    btn_projects:string
 }
 
 interface FooterProps {
@@ -20,7 +19,6 @@ export default function Footer(props:FooterProps) {
             <div>
                 <a onClick={() => props.changePage("About")}>{props.text_data.btn_about}</a>
                 <a href="mailto:n.suton@web.de">{props.text_data.btn_contact}</a>
-                <a onClick={() => props.changePage("Projects")}>{props.text_data.btn_projects}</a>
             </div>
             <div className="attribution">
                 {props.text_data.content}
