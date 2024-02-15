@@ -2,7 +2,8 @@ import './../styles/ProjectDetails.css'
 
 interface DetailItem {
     title:string,
-    content:string
+    content:string,
+    list:Array<string>
 }
 
 interface ProjectElement {
@@ -29,6 +30,11 @@ export default function ProjectDetails(props:ProjectDetailsProps) {
             <div>
                 <h2>{detailItem.title}</h2>
                 <p>{detailItem.content}</p>
+                {detailItem.list != undefined ? 
+                <ul>
+                    {detailItem.list.map((item) => <li>{item}</li>)}
+                </ul> 
+                : <></>}
             </div>
         )
     })
@@ -58,7 +64,9 @@ export default function ProjectDetails(props:ProjectDetailsProps) {
                         </button>
                     </a>
                 </div>
-                {projectElements}
+                <div className="project-elements-container">
+                    {projectElements}
+                </div>
             </div>
         </main>
     )

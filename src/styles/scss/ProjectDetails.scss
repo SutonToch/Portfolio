@@ -20,13 +20,13 @@
         font-size: 2rem;
     }
 
-    p {
+    p, li {
         font-size: 1.2rem;
     }
 }
 
 .project-details-content-container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: var.$clr-white;
     padding: 2em;
@@ -71,6 +71,11 @@
     a {
         text-decoration: none;
     }
+}
+
+.project-elements-container {
+    max-width: 100ch;
+    margin: 5em auto;
 }
 
 @media (max-width: 1100px) {

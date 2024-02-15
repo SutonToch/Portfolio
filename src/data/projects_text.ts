@@ -24,8 +24,34 @@ export const projects_text_data = {
                 ],
                 details: [
                     {
-                        title: "Placeholder Title",
-                        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!"
+                        title: "Ziel und Sinn",
+                        content: "'Klick' diente für mich als Übung meiner JavaScript-Fähigkeiten und eine Möglichkeit, TypeScript auszuprobieren. Außerdem wollte ich schon immer mal ein eigenes kleines Spiel programmieren, auch wenn es recht simpel ist. Hinzu kam, dass ich mir eine Zeitgrenze von einem Monat gegeben habe, um das Spiel zu designen, zu programmieren, zu testen und zu finalisieren."
+                    },
+                    {
+                        title: "Gedankenprozess",
+                        content: "Die erste Frage, die ich mir gestellt habe, war: 'Was könnte man mit dem Cursor machen, das Spaß macht?'. Grundlegend ist mit dem Cursor 'klicken' und 'bewegen' möglich, was man erneut in 'Linksklick (und halten)', 'Rechtsklick (und halten)', sowie Kombinationen mit 'bewegen' unterteilen kann. Damals habe ich mir das etablierte Game-Design von Nintendo in der Super Mario Serie zur Hand genommen: 1. Eine grundlegende Mechanik auswählen (z.B. einfach nur klicken) 2. Diese Mechanik einführen (z.B. etwas anklicken) 3. Die Mechanik expandieren und mit anderen kombinieren (z.B. auftauchende und verschwindende Boxen anklicken). Wenn man diese Art von Game Design auswählt, bietet sich Levelbasiertes Design am besten an, was auch zu 'Klick' passen würde. Dementsprechend wollte ich einen Prototyp erschaffen, um zu überprüfen, ob einfach nur auftauchende Boxen anklicken bereits Spaß machen kann. Und ich denke, dass ich damit erfolgreich war."
+                    },
+                    {
+                        title: "Vision",
+                        content: "'Klick' im jetzigen Zustand ist quasi nur ein Prototyp. Hätte ich mehr Zeit, würde ich es zu einem levelbasierten Browsergame weiterentwickeln, in dem die unterschiedlichen Facetten des Cursors erkundet werden. Hier ein paar Ideen, wie das aussehen könnte:",
+                        list: [
+                            "'bewegen' zentral machen, indem z.B. etwas ausgewichen werden muss. Dieses etwas könnte den Cursor z.B. auch verfolgen",
+                            "die Cursorbewegung glätten, sodass es sich so anfühlt, als wäre der Cursor auf Eis",
+                            "in gewissen Zeitabständen wird der Cursor unsichtbar, sodass man sich merken muss wo man war",
+                            "alles ist dunkel und der Cursor agiert als eine Art Fackel",
+                            "durch eine Art Labyrinth navigieren, während man die Ränder nicht berühren darf",
+                            "eine Box anklicken und zu einem anderen Ort ziehen müssen",
+                            "über einer Box für eine gewisse Zeit hovern",
+                            "innerhalb eines gewissen Zeitrahmens eine bestimmte Anzahl Klicks durchführen",
+                        ]
+                    },
+                    {
+                        title: "Was ich gelernt habe",
+                        content: "Viele meiner Herausforderungen bei diesem Projekt hatten etwas mit TypeScript zu tun, insbesondere die TypeScript-Konfiguration von 'module' und 'target' wo ich das erste Mal von dem Standard ECMA-Script gehört habe. Zu Beginn der Entwicklung habe ich auch getestet, ob es sinnvoll wäre, React für das Projekt zu nutzen. Nach einiger Frustration mit 'stale state' und dem 'useRef Hook' entschied ich mich, das Projekt ohne React anzugehen. Rückblickend halte ich das zum jetzigen Zeitpunkt nicht für die falsche Entscheidung. Es kann jedoch sein, dass ich meine Meinung ändern würde, wenn das Projekt größer werden würde. Alles in allem lässt sich aber festhalten: Manchmal braucht man keine schicken Frameworks, denn manchmal behindern sie einem mehr, als dass sie helfen."
+                    },
+                    {
+                        title: "Tricks für höhere Punktzahlen",
+                        content: "Es sollte klar sein, dass das Spiel einfacher wird, je weniger Abstand zwischen den auftauchenden Boxen ist. Wenn berechnet wird, wo eine Box auftaucht wird immer die Größe des Fensters mit in Betracht gezogen, also ein verkleinertes Fenster macht das Spiel leichter. Außerdem hat 'Klick' eine dynamisch skalierende Schwierigkeit, in der eine schnelle Reaktionszeit die Schwierigkeit schneller erhöht. Wenn man entsprechend eine Box erst dann klickt, kurz bevor sie verschwindet, kann die Schwierigkeit sogar, bis zu einem gewissen Punkt, verringert werden."
                     },
                 ]
             },
@@ -129,8 +155,34 @@ export const projects_text_data = {
                 ],
                 details: [
                     {
-                        title: "Placeholder Title",
-                        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!"
+                        title: "Goal and Purpose",
+                        content: "For me, 'Klick' served as an exercise for my JavaScript skills and a way to try out TypeScript. I also always wanted to program my own little game, even if it is quite simple. In addition, I gave myself a time limit of one month to design, program, test and finalize the game."
+                    },
+                    {
+                        title: "Thought Process",
+                        content: "The first question I asked myself was: 'What could you do with the cursor that would be fun? Basically, you can 'click' and 'move' with the cursor, which can be further divided into 'left-click (and hold)', 'right-click (and hold)', and combinations with 'move'. Back then, I took the established game design from Nintendo in the Super Mario series: 1. select a basic mechanic (e.g. just click) 2. introduce this mechanic (e.g. click on something) 3. expand the mechanic and combine it with others (e.g. click on appearing and disappearing boxes). If you choose this kind of game design, level-based design is the best choice, which would also fit 'Klick'. Accordingly, I wanted to create a prototype to see if simply clicking on appearing boxes could be fun. And I'd like to think I was successful."
+                    },
+                    {
+                        title: "Vision",
+                        content: "'Klick' in its current state is more or less just a prototype. If I had more time, I would develop it into a level-based browser game in which the different facets of the cursor are explored. Here are a few ideas of what that might look like:",
+                        list: [
+                            "centralise 'move', e.g. by having to avoid something. This something could also follow the cursor",
+                            "smooth the cursor movement so that it feels as if the cursor is on ice",
+                            "at certain intervals the cursor becomes invisible, so you have to remember where you were",
+                            "everything is dark and the cursor acts as a kind of torch",
+                            "navigate through a kind of labyrinth while not touching the edges",
+                            "click on a box and have to drag it to another location",
+                            "hover over a box for a certain amount of time",
+                            "perform a certain number of clicks within a certain time frame",
+                        ]
+                    },
+                    {
+                        title: "Lessons learned",
+                        content: "Many of my challenges on this project had to do with TypeScript, especially the TypeScript configuration of 'module' and 'target' where I first heard about the standard ECMA script. At the beginning of the development, I also tested whether it would make sense to use React for the project. After some frustration with 'stale state' and the 'useRef hook', I decided to tackle the project without React. Looking back, I don't think this was the wrong decision at this point in time. However, I might change my mind if the project were to grow. All in all, however, it can be said that sometimes you don't need fancy frameworks, because sometimes they hinder you more than they help."
+                    },
+                    {
+                        title: "Tricks for a better Highscore",
+                        content: "It should be clear that the less space between the boxes that appear, the easier the game will be. When calculating where a box appears, the size of the window is always taken into account, so a smaller window makes the game easier. In addition, 'Klick' has a dynamically scaling difficulty, where a fast reaction time increases the difficulty faster. Accordingly, if you click a box just before it disappears, the difficulty can even be reduced, up to a certain point."
                     },
                 ]
             },
