@@ -27,12 +27,12 @@ export default function ProjectDetails(props:ProjectDetailsProps) {
 
     const projectElements = props.details.details.map((detailItem) => {
         return(
-            <div>
+            <div key={detailItem.title}>
                 <h2>{detailItem.title}</h2>
                 <p>{detailItem.content}</p>
                 {detailItem.list != undefined ? 
                 <ul>
-                    {detailItem.list.map((item) => <li>{item}</li>)}
+                    {detailItem.list.map((item) => <li key={item}>{item}</li>)}
                 </ul> 
                 : <></>}
             </div>
@@ -48,7 +48,7 @@ export default function ProjectDetails(props:ProjectDetailsProps) {
                     <div className="arrow" onClick={() => props.shiftActiveProjectDetailsIndex(1)}/>
                 </div>
                 <div className="stack-container">
-                        {props.details.stack.map((x) => <div className="stack-element">{x}</div>)}
+                        {props.details.stack.map((x) => <div className="stack-element" key={x}>{x}</div>)}
                 </div>
                 <img src={props.details.imgPath} alt=""/>
                 <div className="btn-wrapper">

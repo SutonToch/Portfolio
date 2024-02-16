@@ -25,11 +25,11 @@ export default function Projects(props:ProjectsProps) {
 
     const projectElements = props.text_data.projects.map((project) => {
         return(
-            <article className="project-container">
+            <article className="project-container" key={project.state}>
                 <h2 className="project-title">{project.title}</h2>
                 <div className="project-filler"></div>
                 <div className="stack-container">
-                    {project.stack.map((x) => <div className="stack-element">{x}</div>)}
+                    {project.stack.map((x) => <div className="stack-element" key={x}>{x}</div>)}
                 </div>
                 <button className="project-btn" onClick={() => props.changePage(project.state)}>
                     {props.text_data.btn_projects}
@@ -41,7 +41,7 @@ export default function Projects(props:ProjectsProps) {
                     <></>
                 }
                 <div className="project-short">
-                    {project.short.map((paragraph) => <p>{paragraph}</p>)}
+                    {project.short.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                 </div>
                 <img className="project-img" src={project.imgPath} alt=""/>
             </article>

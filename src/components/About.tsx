@@ -10,7 +10,7 @@ interface AboutProps {
     const current_text_data = props.lang == "EN" ? about_text_data.en : about_text_data.de
     const content = current_text_data.about_content.map((item) => {
       return(
-        <div>
+        <div key={item.header}>
           <h2>
             {item.header}
           </h2>
