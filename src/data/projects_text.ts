@@ -70,14 +70,22 @@ export const projects_text_data = {
                 liveURL: "https://sutontoch.github.io/interactive-card-details-form/",
                 github: "https://github.com/SutonToch/interactive-card-details-form",
                 short: [
-                    "Ein 'Frontend Mentor'-Projekt, bei dem man eine Komponente zur Eingabe von Kreditkartendaten erstellt. Diese sollen dann interaktiv auf der Seite angezeigt werden.", 
+                    "Ein 'Frontend Mentor'-Projekt, bei dem man eine Komponente zur Eingabe von Kreditkartendaten erstellt. Die Kreditkartendaten sollen dann dynamisch auf der Seite angezeigt werden.", 
                     "Durch dieses Projekt konnte ich mein Verständnis für Positionierung vertiefen, sodass ich es jemandem anderen ohne Probleme vermitteln könnte. Hier habe ich auch die regulären Ausdrücke aus meiner Studienzeit wiederholt.", 
                     "Wenn ich das Projekt ein zweites Mal machen würde, würde ich etwas anders an das Layout herangehen. Wenn Interesse besteht, unter 'Mehr anzeigen' gehe ich tiefer ins Detail."
                 ],
                 details: [
                     {
-                        title: "Placeholder Title",
-                        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!"
+                        title: "Ziel und Sinn",
+                        content: "Dies ist eins meiner neueren Projekte neben dem Portfolio. Nachdem ich mit der ersten Version meines Portfolios nicht zufrieden war, wollte ich erstmal ein anderes Projekt zur Ablenkung und Übung angehen. Ich habe diese Frontend-Mentor-Challenge gewählt, weil die Positionierung der Karten für mich interessant aussah und ich schon lange keine Formularvalidierung mehr gemacht hatte."
+                    },
+                    {
+                        title: "Gedankenprozess",
+                        content: "Ich habe mir hauptsächlich über die Positionierung der Karten Gedanken gemacht, weil ich wusste, dass ich die regulären Ausdrücke für die Formularvalidierung schaffen würde. Mein erster Gedanke für die Positionierung der Karten war einfach nur 'position: absolute;' mit '%' als Einheit. Den Rest würden dann ggf. Media Queries lösen können."
+                    },
+                    {
+                        title: "Was ich anders machen würde",
+                        content: "Wenn ich das Projekt ein zweites Mal machen würde, dann würde ich die Karten mittels 'display: grid' positionieren und den Hintergrund mittels 'position: absolute;'. Das sollte sehr viel mehr Kontrolle bieten und weniger Media Queries benötigen, wodurch diese Komponente wiederum leichter zu warten wäre.Außerdem würde ich den Labels 'display: inline-block;' geben, damit wirklich nur deren Text anklickbar ist."
                     },
                 ]
             },
@@ -201,14 +209,22 @@ export const projects_text_data = {
                 liveURL: "https://sutontoch.github.io/interactive-card-details-form/",
                 github: "https://github.com/SutonToch/interactive-card-details-form",
                 short: [
-                    "A 'Frontend Mentor' project in which you create a component for entering credit card details. These should then be displayed interactively on the page.", 
+                    "A 'Frontend Mentor' project in which you create a component for entering credit card details. These should then be displayed dynamically on the page.", 
                     "This project allowed me to deepen my understanding of positioning to such an extent, that I could easily teach it to someone else. Here I also revisited the regular expressions from my student days.", 
                     "If I were to do the project a second time, I would approach the layout slightly differently. If you are interested, I go into more detail under 'Show more'."
                 ],
                 details: [
                     {
-                        title: "Placeholder Title",
-                        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!"
+                        title: "Ziel und Sinn",
+                        content: "This is one of my newer projects besides the portfolio. After not being satisfied with the first version of my portfolio, I wanted to tackle another project for distraction and practice. I chose this frontend mentor challenge because the positioning of the cards looked interesting to me and I hadn't done any form validation in a long time."
+                    },
+                    {
+                        title: "Gedankenprozess",
+                        content: "I mainly thought about the positioning of the cards because I knew that I would easily manage the regular expressions for the form validation. My first thought for the positioning of the cards was simply 'position: absolute;' with '%' as the unit. Media queries would then be able to solve the rest."
+                    },
+                    {
+                        title: "Was ich anders machen würde",
+                        content: "If I were to do the project a second time, then I would position the cards using 'display: grid' and the background using 'position: absolute;'. This should provide much more control and require fewer media queries, which in turn would make this component easier to maintain. I would also give the labels 'display: inline-block;' so that only their text is really clickable."
                     },
                 ]
             },
