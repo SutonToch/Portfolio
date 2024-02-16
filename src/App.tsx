@@ -17,6 +17,7 @@ export default function App() {
   const projectsDetailStates = projects_text_data.de.projects.map((project) => project.state)
   const activeProjectDetailsIndex = projectsDetailStates.indexOf(page)
 
+  //should have used useEffect
   function changePage(destination:string) {
     window.scrollTo(0, 0);
     setPage(destination)

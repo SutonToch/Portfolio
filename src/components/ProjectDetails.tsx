@@ -3,7 +3,7 @@ import './../styles/ProjectDetails.css'
 interface DetailItem {
     title:string,
     content:string,
-    list:Array<string>
+    list?:Array<string>
 }
 
 interface ProjectElement {
