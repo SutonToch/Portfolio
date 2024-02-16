@@ -94,7 +94,7 @@ export const projects_text_data = {
                 state: "Calculator",
                 imgPath: trPic,
                 stack: [
-                    "JavaScript",
+                    "jQuery",
                     "CSS",
                     "HTML"
                 ],
@@ -103,12 +103,16 @@ export const projects_text_data = {
                 short: [
                     "Eine Taschenrechner-Webanwendung. Dies ist das Projekt, bei dem ich meine JavaScript- und Grid-Layout-Fähigkeiten getestet habe.", 
                     "Ich habe ziemlich viel Arbeit in dieses Projekt gesteckt, mit ein paar zusätzlichen Funktionen, mit denen ich über das Ziel hinausgegangen bin. Zum Beispiel habe ich eine eigene und sichere eval-Funktion entwickelt, und man kann die Tastatur für Eingaben im Taschenrechner nutzen. Die eval-Funktion wurde ziemlich kompliziert, aber ich bin stolz darauf 💪.", 
-                    "Ich bin mir bewusst, dass viele Portfolios einen Taschenrechner enthalten, aber ich denke, dass dieses Projekt etwas Besonderes ist, weil es zeigt, dass ich bereit und in der Lage bin, die Extrameile zu gehen. Trotzdem das Interesse geweckt? Hier sind die Links:"
+                    "Ich bin mir bewusst, dass viele Portfolios einen Taschenrechner enthalten, aber ich denke, dass dieses Projekt etwas Besonderes ist, weil es zeigt, dass ich bereit und in der Lage bin, die Extrameile zu gehen."
                 ],
                 details: [
                     {
-                        title: "Placeholder Title",
-                        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!"
+                        title: "Ziel und Sinn",
+                        content: "Mit diesem Projekt wollte ich mich etwas herausfordern. Ich habe für mich jQuery (Javascript Library) ausprobiert und wie man in CSS mit wechselbaren Themes umgehen kann. jQuery habe ich seitdem nicht wieder verwendet. Außerdem wollte ich mal etwas Komplexeres machen als nur Struktur, Styling und simple Interaktivität."
+                    },
+                    {
+                        title: "eval-Funktion (kurz: eval())",
+                        content: "Im Taschenrechner werden alle Eingaben als Text behandelt. Mittels eval() kann diese Arithmetik in Textform in echte Zahlen umgewandelt und ausgewertet werden. Leider stellt eval() ein Sicherheitsrisiko dar, weswegen es vermieden werden sollte (für Details siehe MDN Web Docs). Die interessante Herausforderung an meiner eval() war, dass die Operatorrangfolge beachtet werden muss, weil die Ausdrücke sehr lang und durcheinander sein dürfen. Zum Glück waren in diesem konkreten Projekt keine Klammern vorhanden, so konnte ich meine eval() etwas simpler gestalten. Vereinfacht ausgedrückt schaut sich das Programm jeden Subausdruck an und versucht alles Schritt für Schritt zu vereinfachen, bis schließlich nur noch eine Zahl vorhanden ist. Um einen Subausdruck zu finden, geht das Programm wie ein Cursor durch die Eingabe und sucht nach Rechenzeichen und anschließend nach den dazugehörigen Zahlen und vereinfacht dann. Die vielen verschiedenen Lösungsmöglichkeiten auszuarbeiten und schließlich eine zu implementieren, hatte sehr viel Spaß gemacht."
                     },
                 ]
             },
@@ -233,7 +237,7 @@ export const projects_text_data = {
                 state: "Calculator",
                 imgPath: trPic,
                 stack: [
-                    "JavaScript",
+                    "jQuery",
                     "CSS",
                     "HTML"
                 ],
@@ -242,12 +246,16 @@ export const projects_text_data = {
                 short: [
                     "A calculator web application. This is the project where I tested my JavaScript and grid layout skills.", 
                     "I put quite a bit of work into this project, with a few extra features with which I went above and beyond. For example, I developed a custom and secure eval-function, and you can use the keyboard for input in the calculator. The eval-function became quite complicated, but I am proud of it 💪.", 
-                    "I am aware that many portfolios include a calculator, but I think this project is special because it shows that I am willing and able to go the extra mile. Still interested? Here are the links:"
+                    "I am aware that many portfolios include a calculator, but I think this project is special because it shows that I am willing and able to go the extra mile."
                 ],
                 details: [
                     {
-                        title: "Placeholder Title",
-                        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!"
+                        title: "Goal and Purpose",
+                        content: "I wanted to challenge myself a little with this project. I tried out jQuery (a Javascript library) for myself and how to deal with changeable themes in CSS. But I haven't used jQuery again since. I also wanted to do something more complex than just structure, styling and simple interactivity."
+                    },
+                    {
+                        title: "eval-Funktion (kurz: eval())",
+                        content: "In the calculator, all inputs are treated as text. Using eval(), this arithmetic in text form can be converted into real numbers and evaluated. Unfortunately, eval() is a security risk, so it should be avoided (see MDN Web Docs for details). The interesting challenge with my eval() was that the operator order must be respected. This is not necessarily trivial because the expressions can be very long. Fortunately, there were no brackets in this particular project, so I was able to make my eval() a little simpler. Put simply, the program looks at each sub-expression and tries to simplify everything step by step until there is only one number left. To find a sub-expression, the program goes through the input like a cursor and searches for arithmetic symbols and then for the corresponding numbers and then simplifies. Working out the many different possible solutions and finally implementing one was a lot of fun."
                     },
                 ]
             },
