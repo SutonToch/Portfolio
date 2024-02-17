@@ -1,8 +1,14 @@
 import './../styles/ProjectDetails.css'
 
+interface SubDetailItem {
+    subtitle:string,
+    paragraph:string
+}
+
 interface DetailItem {
     title:string,
-    content:string,
+    content?:string,
+    contents?:Array<SubDetailItem>,
     list?:Array<string>
 }
 
@@ -29,8 +35,18 @@ export default function ProjectDetails(props:ProjectDetailsProps) {
         return(
             <div key={detailItem.title}>
                 <h2>{detailItem.title}</h2>
-                <p>{detailItem.content}</p>
-                {detailItem.list != undefined ? 
+                {detailItem.contents ? detailItem.contents.map((subDetailItem) => {
+                    return(
+                        <div key={subDetailItem.subtitle}>
+                            <h3>{subDetailItem.subtitle}</h3>
+                            <p>{subDetailItem.paragraph}</p>
+                        </div>
+                    )
+                }) : <></>}
+                {detailItem.content ? 
+                <p>{detailItem.content}</p> 
+                : <></>}
+                {detailItem.list ? 
                 <ul>
                     {detailItem.list.map((item) => <li key={item}>{item}</li>)}
                 </ul> 

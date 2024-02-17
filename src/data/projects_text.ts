@@ -137,8 +137,51 @@ export const projects_text_data = {
                 ],
                 details: [
                     {
-                        title: "Placeholder Title",
-                        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!"
+                        title: "Ziel und Sinn",
+                        content: "Mein Hauptziel mit dem Portfolio-Projekt war, dass ich mir meine eigenen Fähigkeiten beweisen wollte, um sicher zu sein, dass ich bereit für einen Frontend-Developer-Job bin. Außerdem hatte ich bis jetzt noch nicht viel Designarbeit gemacht, und ich wollte entsprechend meine Augen dafür schulen. Ich kenne zwar grundlegende Prinzipien wie 'Whitespace', 'Hierarchy', 'Focal Point' und '60/30/10' in Bezug auf Farbauswahl, aber bzgl. 'Design' an sich habe ich trotzdem noch sehr viel zu lernen."
+                    },
+                    {
+                        title: "Erster Versuch",
+                        contents: [
+                            {
+                                subtitle: "Herangehensweise",
+                                paragraph: "Zuallererst habe ich mir andere Portfolios angeschaut und notiert, was ich mag und was ich nicht mag. Dann habe ich ein eigenes Design entworfen, was teilweise recht nah an anderen Portfoliodesigns war, aber mit meinem eigenen Twist. Dieses Design wollte ich dann implementieren und entlang des Weges regelmäßig überprüfen, ob es für meine Anforderungen gut genug wird."
+                            },
+                            {
+                                subtitle: "Geplante Features",
+                                paragraph: "Für mich war von Anfang an klar, dass das Portfolio zwischen Deutsch und Englisch wechselbar sein sollte, somit brauchte ich eine 'sticky' Kopfzeile. Zum einen hat es mich interessiert, wie so etwas umsetzbar wäre, aber auch um meine Englischkenntnisse unter Beweis zu stellen. Ansonsten wollte ich einen Hero mit einer kurzen Begrüßung und einem animierten Hintergrund, um direkt Aufmerksamkeit zu wecken. Zu diesem Zeitpunkt wusste ich aber noch nicht, wie genau der animierte Hintergrund aussehen sollte. Danach sollte ein kurzes 'Über mich' mit einem Bild kommen, mit der Möglichkeit, die längere Version darunter auszuklappen. Darauf dann eine Sektion mit meinen Projekten, die man mittels Slider durchwechseln kann, ein Kontaktformular und noch zu guter Letzt die Fußzeile."
+                            },
+                            {
+                                subtitle: "Probleme",
+                                paragraph: "Der Platz im Hero ist nicht effizient genutzt und uninteressant, was kein animierter Hintergrund hätte ändern können. Teile des Kontaktformulars waren ziemlich unnötig und lang, weil Erklärungen benötigt wurden, da ich keinen eigenen Webserver für die E-Mails verwende."
+                            }
+                        ]
+                    },
+                    {
+                        title: "Zweiter Versuch",
+                        contents: [
+                            {
+                                subtitle: "Herangehensweise",
+                                paragraph: "Zunächst habe ich mein Bild und die kurze Version des 'Über mich' in den Hero verschoben. Der Rest vom 'Über mich' sollte dann auf einer separaten Seite sein, um die Aufgabe der Startseite (schneller Überblick) zu unterstützen. Das Kontaktformular habe ich dann entfernt und durch einen simplen Link, der das Mailprogramm öffnet, ersetzt. Es ist äußerst unwahrscheinlich, dass jemand mit Interesse mein Portfolio findet, der nicht auch andere Kontaktmöglichkeiten hat. Die Links zum 'Über mich' und 'Kontakt' sollen dann am unteren Rand vom Hero auffindbar sein. Die Projekte werden weiterhin über einen Slider angezeigt, wobei diese nebeneinander sind. Der Slider sollte dabei etwa 30% der Breite einnehmen, und die Projektbeschreibung den Rest."
+                            },
+                            {
+                                subtitle: "Probleme",
+                                paragraph: "Die Links zum 'Über mich' und 'Kontakt' im Hero waren unnötig, weil diese Art von Navigation in der Kopf- und Fußzeile besser aufgehoben ist. Durch den Slider fühlte sich die Menge an Projekten sehr gering und unbeeindruckend an. Hier habe ich auch verstanden, dass Slider nur zum Komprimieren von potenziell überwältigenden Informationen (z.B. viele große Bilder) verwendet werden sollte. Des Weiteren war es problematisch, den Slider neben der Projektbeschreibung zu haben, weil entweder das Bild vom Slider zu klein war oder die Projektbeschreibung zu viel."
+                            }
+                        ]
+                    },
+                    {
+                        title: "Dritter Versuch",
+                        contents: [
+                            {
+                                subtitle: "Herangehensweise",
+                                paragraph: "Zunächst den Slider entfernen und etwas Kurzes über jedes Projekt schreiben, um das Interesse zu wecken und die Aufgabe der Startseite (schneller Überblick) zu unterstützen. Anschließend die Projekte in einem interessanten Layout anordnen und ihnen genug Platz zum 'atmen' geben. Hier habe ich mich auch endlich entschieden, wie der animierte Hintergrund aussehen könnte, weil ich zufälligerweise ein ähnliches Beispiel gefunden habe, das ich sehr mochte. Auf dem Weg hierher gab es noch viele weitere kleine Anpassungen und Änderungen, die das Gesamtpaket abgerundet haben."
+                            },
+                        ]
+                    },
+                    {
+                        title: "Was ich gelernt habe",
+                        content: "Was ich im Laufe dieses Projektes gelernt habe, und es mag absurd klingen, ist, dass die Schriftgröße einen großen Einfluss auf das Gesamtbild haben kann, was ich vorher nicht angenommen hätte. Ansonsten habe ich generell meine Intuition und Verständnis für Design weiterentwickelt. Wie so häufig hat sich auch wieder herausgestellt, dass Vorausplanen, z.B. über ein Figma-Design, mir eventuell einiges an Zeit hätte sparen können. Ich dachte, ich schaffe das einfach während ich programmiere, aber Ende glaube ich, dass ein ordentlicher Plan mir Zeit gespart hätte."
                     },
                 ]
             }
@@ -280,8 +323,51 @@ export const projects_text_data = {
                 ],
                 details: [
                     {
-                        title: "Placeholder Title",
-                        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus velit libero, suscipit quasi provident quod officiis exercitationem voluptatibus fuga, aperiam aspernatur quidem earum, distinctio molestias sequi? Explicabo aut velit modi commodi assumenda in nemo, expedita maiores adipisci laboriosam sunt? Tenetur corrupti inventore rem possimus quidem esse iste, eaque voluptas quam molestiae fuga, veniam, consequuntur doloribus quibusdam nemo adipisci libero? In pariatur aspernatur, accusamus quisquam dicta deserunt labore maiores distinctio ipsam eligendi veniam culpa mollitia modi porro, incidunt, et adipisci. Libero eum ipsum vel necessitatibus eius facere nemo iste aliquam eligendi, illum est. Deleniti eius aspernatur rerum, laudantium harum explicabo!"
+                        title: "Goal and Purpose",
+                        content: "My main goal with the portfolio project was that I wanted to prove my own skills to myself and to make sure I was ready for a front-end developer job. Also, I hadn't done much design work before and I wanted to train my eyes properly. I know basic principles like 'whitespace', 'hierarchy', 'focal point' and '60/30/10' in terms of color selection, but I still have a lot to learn about 'design' itself."
+                    },
+                    {
+                        title: "First Try",
+                        contents: [
+                            {
+                                subtitle: "Approach",
+                                paragraph: "First of all, I looked at other portfolios and noted what I liked and what I didn't like. Then I created my own design, which was partly quite close to other portfolio designs, but with my own twist. I then wanted to implement this design and regularly check if the portfolio was becoming good enough for my requirements."
+                            },
+                            {
+                                subtitle: "Planned Features",
+                                paragraph: "It was clear to me from the start that the portfolio should be switchable between German and English, so I needed a 'sticky' header. On one hand, I was interested in how something like this could be implemented, but also to demonstrate my knowledge of English. Apart from that, I wanted a hero with a short greeting and an animated background to immediately attract attention. At this point, however, I didn't know exactly what the animated background should look like. This was to be followed by a short 'About me' with a picture, with the option to expand the longer version underneath. Then a section with my projects, which can be changed using a slider, a contact form and, last but not least, the footer."
+                            },
+                            {
+                                subtitle: "Problems",
+                                paragraph: "The space in the hero is not efficiently used and uninteresting, which no animated background could have changed. Parts of the contact form were quite unnecessary and long because explanations were needed as I don't use my own web server for the emails."
+                            }
+                        ]
+                    },
+                    {
+                        title: "Second Try",
+                        contents: [
+                            {
+                                subtitle: "Approach",
+                                paragraph: "First, I moved my picture and the short version of the 'About me' to the Hero. The rest of the 'About me' should then be on a separate page to support the purpose of the homepage (quick overview). I then removed the contact form and replaced it with a simple link that opens the mail program. It is extremely unlikely that anyone with any interest will find my portfolio who does not have other ways of contacting me. The links to 'About me' and 'Contact' will then be available at the bottom of the Hero. The projects are still displayed via a slider, where they are next to each other. The slider should take up about 30% of the width and the project description the rest."
+                            },
+                            {
+                                subtitle: "Problems",
+                                paragraph: "The links to 'About me' and 'Contact' in the Hero were unnecessary because this type of navigation is better placed in the header and footer. The slider made the amount of projects feel very small and unimpressive. Here I also understood that sliders should only be used to compress potentially overwhelming information (e.g. lots of large images). Furthermore, having the slider next to the project description was problematic because either the image from the slider was too small or the project description was too much."
+                            }
+                        ]
+                    },
+                    {
+                        title: "Third Try",
+                        contents: [
+                            {
+                                subtitle: "Approach",
+                                paragraph: "First remove the slider and write something short about each project to spark interest and support the purpose of the homepage (quick overview). Then arrange the projects in an interesting layout and give them enough space to 'breathe'. This is also where I finally decided what the animated background could look like, because I happened to find a similar example that I really liked. Along the way there were many other small adjustments and changes that rounded out the overall look."
+                            },
+                        ]
+                    },
+                    {
+                        title: "What I learned",
+                        content: "One thing I have learned in the course of this project, and it may sound absurd, is that font size can have a big impact on the overall look, which I would not have assumed before. Apart from that, I have generally improved my intuition and understanding of design. As is so often the case, it also turned out that planning ahead, e.g. via a Figma design, could have saved me a lot of time. I thought I could just do it while I was programming, but in the end I think a proper plan would have saved me time."
                     },
                 ]
             }
