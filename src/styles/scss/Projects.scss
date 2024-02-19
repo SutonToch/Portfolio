@@ -1,10 +1,5 @@
 @use 'variables' as var;
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
 .projects {
     color: var.$clr-darkblue;
     background-color: var.$clr-white;
@@ -17,7 +12,6 @@
 
 .projects-title {
     text-align: center;
-    font-size: 2.8rem;
 }
 
 .project-container {
@@ -46,7 +40,6 @@
 
 .project-title {
     grid-area: title;
-    font-size: 2rem;
     text-wrap: balance;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -100,13 +93,7 @@
     border-radius: 100vw;
     padding: 0.4em 1em;
     background-color: var.$clr-white;
-    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;    
     cursor: pointer;
-
-    &:hover, &:focus {
-        color: var.$clr-green;
-        border-color: var.$clr-green;
-    }
 }
 
 .project-start {
@@ -117,7 +104,6 @@
 
 .project-short {
     grid-area: short;
-    font-size: 1.2rem;
 }
 
 .project-img {

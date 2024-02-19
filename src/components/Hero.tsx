@@ -17,7 +17,7 @@ export default function Hero(props:HeroProps) {
 
   return (
     <section className="hero">
-      <div className="grid-container">
+      <div className="container">
         <div className="img-container">
           <img src={Me} alt=""/>
         </div>

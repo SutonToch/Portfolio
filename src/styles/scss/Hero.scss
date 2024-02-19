@@ -8,16 +8,13 @@
     background-color: var.$clr-darkblue;
     min-height: 95svh;
 
-    .grid-container {
+    .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: center;
         align-self: center;
         grid-gap: 4em;
-    
-        max-width: 1440px;
-        margin: 0 auto;
     }
 }
 
@@ -43,11 +40,8 @@
         z-index: 2;
         background-color: var.$clr-darkblue;
     }
-    h1 {
-        font-size: 2.8rem;
-    }
+
     p {
-        font-size: 1.2rem;
         margin: 0;
     }
 }
@@ -56,7 +50,7 @@
     .hero {
         padding: 1em 5vw;
 
-        .grid-container {
+        .container {
             grid-template-columns: 1fr;
             grid-gap: 1em;
         }
@@ -77,6 +71,7 @@
         }
         p {
             font-size: 1.1rem;
+            margin-bottom: 1em;
         }
     }
 }

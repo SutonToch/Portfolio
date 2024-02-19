@@ -12,8 +12,7 @@ export default function AnimatedBackground(props:AnimatedBackgroundProps) {
     const smallXStep = Math.floor(100 / props.smallBoxCount)
     const mediumXStep = Math.floor(100 / props.mediumBoxCount)
     const largeXStep = Math.floor(100 / props.largeBoxCount)
-    //randomize x-axis, duration and negative animation delay
-    //3 types, smaller is slower
+
     for(let i=0; i<props.smallBoxCount; i++) {
         let box = {
             class: 'small-moving-box',
@@ -24,6 +23,7 @@ export default function AnimatedBackground(props:AnimatedBackgroundProps) {
         }
         movingBoxes.push(box)
     }
+
     for(let i=0; i<props.mediumBoxCount; i++) {
         let box = {
             class: 'medium-moving-box',
@@ -34,6 +34,7 @@ export default function AnimatedBackground(props:AnimatedBackgroundProps) {
         }
         movingBoxes.push(box)
     }
+
     for(let i=0; i<props.largeBoxCount; i++) {
         let box = {
             class: 'large-moving-box',
@@ -57,8 +58,8 @@ export default function AnimatedBackground(props:AnimatedBackgroundProps) {
     })
 
   return (
-    <>
+    <div className="anim-bg">
         {movingBoxElements}
-    </>
+    </div>
   )
 }

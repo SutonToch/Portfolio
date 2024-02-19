@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["scss/AnimatedBackground.scss","scss/_variables.scss"],"names":[],"mappings":"AAEA;EACI;EAEA;EACA;EACA,kBCNQ;;;ADSZ;EACI;EAEA;EACA;EACA,kBCdQ;;;ADiBZ;EACI;EAEA;EACA;EACA,kBCtBQ;;;ADyBZ;EACI;IACE;;EAEF;IACE;IACA","file":"AnimatedBackground.css"}
+{"version":3,"sourceRoot":"","sources":["scss/AnimatedBackground.scss","scss/_variables.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA,kBCLQ;;;ADQZ;EACI;EACA;EACA;EACA,kBCZQ;;;ADeZ;EACI;EACA;EACA;EACA,kBCnBQ;;;ADsBZ;EACI;IACE;;EAEF;IACE;IACA","file":"AnimatedBackground.css"}

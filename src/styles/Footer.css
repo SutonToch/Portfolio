@@ -4,21 +4,18 @@ footer {
   padding: 1em;
   font-size: 1.1rem;
 }
-
-.flex-container {
+footer .container {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin: 0 auto;
-  max-width: 1440px;
 }
-.flex-container div {
+footer .container div {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   width: 100%;
 }
-.flex-container a {
+footer .container a {
   display: block;
   max-width: 200px;
   margin: 0 auto;
@@ -27,7 +24,7 @@ footer {
   text-decoration: underline;
   cursor: pointer;
 }
-.flex-container a:hover, .flex-container a:focus {
+footer .container a:hover, footer .container a:focus {
   color: #7db48e;
 }
 

@@ -15,18 +15,6 @@
     .project-start {
         margin: 1em 0 0;
     }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.6rem;
-    }
-
-    p, li {
-        font-size: 1.2rem;
-    }
 }
 
 .project-details-content-container {
@@ -50,7 +38,7 @@
         height: 30px;
         cursor: pointer;
         transform: rotate(45deg);
-        transition: border-color 0.5s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
         justify-self: center;
 
         &:hover {
@@ -102,5 +90,17 @@
         .project-btn {
             margin-top: 0.5em;
         }
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.1rem;
     }
 }

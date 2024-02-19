@@ -5,34 +5,32 @@ footer {
     color: var.$clr-white;
     padding: 1em;
     font-size: 1.1rem;
-}
 
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1440px;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        
+        div {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            width: 100%;
+        }
     
-    div {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        width: 100%;
-    }
-
-    a {
-        display: block;
-        max-width: 200px;
-        margin: 0 auto;
-        padding: 0.2em;
-        color: inherit;
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
-    a:hover, a:focus {
-        color: var.$clr-green;
+        a {
+            display: block;
+            max-width: 200px;
+            margin: 0 auto;
+            padding: 0.2em;
+            color: inherit;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    
+        a:hover, a:focus {
+            color: var.$clr-green;
+        }
     }
 }
 

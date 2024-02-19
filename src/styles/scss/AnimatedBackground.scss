@@ -2,7 +2,6 @@
 
 .small-moving-box {
     position: absolute;
-    // box-shadow: 0 0 2px 1px white;
     width: 1px;
     height: 1px;
     background-color: var.$clr-white;
@@ -10,7 +9,6 @@
 
 .medium-moving-box {
     position: absolute;
-    // box-shadow: 0 0 4px 2px white;
     width: 2px;
     height: 2px;
     background-color: var.$clr-white;
@@ -18,7 +16,6 @@
 
 .large-moving-box {
     position: absolute;
-    // box-shadow: 0 0 6px 3px white;
     width: 4px;
     height: 4px;
     background-color: var.$clr-white;

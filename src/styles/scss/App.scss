@@ -1,0 +1,32 @@
+@use 'variables' as var;
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+button, a {
+    transition: 
+        border-color 0.3s ease-in-out, 
+        color 0.3s ease-in-out;
+    &:hover, &:focus {
+      color: var.$clr-green;
+      border-color: var.$clr-green;
+    }
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p, li {
+    font-size: 1.2rem;
+}
