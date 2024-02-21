@@ -60,7 +60,7 @@ export default function ProjectDetails(props:ProjectDetailsProps) {
             <div className="project-details-content-container">
                 <div className="project-title-container">
                     <div className="arrow" onClick={() => props.shiftActiveProjectDetailsIndex(-1)}/>
-                    <h1 className="projects-title">{props.details.title}</h1>
+                    <h1 className="project-details-title">{props.details.title}</h1>
                     <div className="arrow" onClick={() => props.shiftActiveProjectDetailsIndex(1)}/>
                 </div>
                 <div className="stack-container">

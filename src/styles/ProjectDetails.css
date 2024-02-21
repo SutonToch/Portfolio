@@ -50,6 +50,10 @@
   translate: -10px 5px;
 }
 
+.project-details-title {
+  text-align: center;
+}
+
 .btn-wrapper {
   display: flex;
   justify-content: space-evenly;

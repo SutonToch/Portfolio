@@ -35,7 +35,7 @@ export const projects_text_data = {
                         title: "Vision",
                         content: "'Klick' im jetzigen Zustand ist quasi nur ein Prototyp. Hätte ich mehr Zeit, würde ich es zu einem levelbasierten Browsergame weiterentwickeln, in dem die unterschiedlichen Facetten des Cursors erkundet werden. Hier ein paar Ideen, wie das aussehen könnte:",
                         list: [
-                            "'bewegen' zentral machen, indem z.B. etwas ausgewichen werden muss. Dieses etwas könnte den Cursor z.B. auch verfolgen",
+                            "'bewegen' zentral machen, indem z.B. etwas ausgewichen werden muss. Dieses Etwas könnte den Cursor z.B. auch verfolgen",
                             "die Cursorbewegung glätten, sodass es sich so anfühlt, als wäre der Cursor auf Eis",
                             "in gewissen Zeitabständen wird der Cursor unsichtbar, sodass man sich merken muss wo man war",
                             "alles ist dunkel und der Cursor agiert als eine Art Fackel",
@@ -47,11 +47,11 @@ export const projects_text_data = {
                     },
                     {
                         title: "Was ich gelernt habe",
-                        content: "Viele meiner Herausforderungen bei diesem Projekt hatten etwas mit TypeScript zu tun, insbesondere die TypeScript-Konfiguration von 'module' und 'target' wo ich das erste Mal von dem Standard ECMA-Script gehört habe. Zu Beginn der Entwicklung habe ich auch getestet, ob es sinnvoll wäre, React für das Projekt zu nutzen. Nach einiger Frustration mit 'stale state' und dem 'useRef Hook' entschied ich mich, das Projekt ohne React anzugehen. Rückblickend halte ich das zum jetzigen Zeitpunkt nicht für die falsche Entscheidung. Es kann jedoch sein, dass ich meine Meinung ändern würde, wenn das Projekt größer werden würde. Alles in allem lässt sich aber festhalten: Manchmal braucht man keine schicken Frameworks, denn manchmal behindern sie einem mehr, als dass sie helfen."
+                        content: "Viele meiner Herausforderungen bei diesem Projekt hatten etwas mit TypeScript zu tun, insbesondere die TypeScript-Konfiguration von 'module' und 'target', bei der ich das erste Mal von dem Standard ECMA-Script gehört habe. Zu Beginn der Entwicklung habe ich auch getestet, ob es sinnvoll wäre, React für das Projekt zu nutzen. Nach einiger Frustration mit 'stale state' und dem 'useRef Hook' entschied ich mich, das Projekt ohne React anzugehen. Rückblickend halte ich das zum jetzigen Zeitpunkt nicht für die falsche Entscheidung. Es kann jedoch sein, dass ich meine Meinung ändern würde, wenn das Projekt größer werden würde. Alles in allem lässt sich aber festhalten: Manchmal braucht man keine schicken Frameworks, denn manchmal behindern sie einen mehr, als dass sie helfen."
                     },
                     {
                         title: "Tricks für höhere Punktzahlen",
-                        content: "Es sollte klar sein, dass das Spiel einfacher wird, je weniger Abstand zwischen den auftauchenden Boxen ist. Wenn berechnet wird, wo eine Box auftaucht wird immer die Größe des Fensters mit in Betracht gezogen, also ein verkleinertes Fenster macht das Spiel leichter. Außerdem hat 'Klick' eine dynamisch skalierende Schwierigkeit, in der eine schnelle Reaktionszeit die Schwierigkeit schneller erhöht. Wenn man entsprechend eine Box erst dann klickt, kurz bevor sie verschwindet, kann die Schwierigkeit sogar, bis zu einem gewissen Punkt, verringert werden."
+                        content: "Es sollte klar sein, dass das Spiel einfacher wird, je weniger Abstand zwischen den auftauchenden Boxen ist. Wenn berechnet wird, wo eine Box auftaucht, wird immer die Größe des Fensters mit in Betracht gezogen. Ein verkleinertes Fenster macht das Spiel also leichter. Außerdem hat 'Klick' eine dynamisch skalierende Schwierigkeit, in der eine schnelle Reaktionszeit die Schwierigkeit mehr erhöht. Wenn man entsprechend eine Box erst dann klickt, kurz bevor sie verschwindet, kann die Schwierigkeit sogar, bis zu einem gewissen Punkt, verringert werden."
                     },
                 ]
             },
@@ -70,8 +70,8 @@ export const projects_text_data = {
                 liveURL: "https://sutontoch.github.io/interactive-card-details-form/",
                 github: "https://github.com/SutonToch/interactive-card-details-form",
                 short: [
-                    "Ein 'Frontend Mentor'-Projekt, bei dem man eine Komponente zur Eingabe von Kreditkartendaten erstellt. Die Kreditkartendaten sollen dann dynamisch auf der Seite angezeigt werden.", 
-                    "Durch dieses Projekt konnte ich mein Verständnis für Positionierung vertiefen, sodass ich es jemandem anderen ohne Probleme vermitteln könnte. Hier habe ich auch die regulären Ausdrücke aus meiner Studienzeit wiederholt.", 
+                    "Ein 'Frontend Mentor'-Projekt, bei dem man eine Komponente zur Eingabe von Kreditkartendaten erstellt. Diese sollen dann dynamisch auf der Seite angezeigt werden.", 
+                    "Durch dieses Projekt konnte ich mein Verständnis für Positionierung vertiefen, sodass ich es jemandem anderem ohne Probleme vermitteln könnte. Hier habe ich auch die regulären Ausdrücke aus meiner Studienzeit wiederholt.", 
                     "Wenn ich das Projekt ein zweites Mal machen würde, würde ich etwas anders an das Layout herangehen. Wenn Interesse besteht, unter 'Mehr anzeigen' gehe ich tiefer ins Detail."
                 ],
                 details: [
@@ -85,7 +85,7 @@ export const projects_text_data = {
                     },
                     {
                         title: "Was ich anders machen würde",
-                        content: "Wenn ich das Projekt ein zweites Mal machen würde, dann würde ich die Karten mittels 'display: grid' positionieren und den Hintergrund mittels 'position: absolute;'. Das sollte sehr viel mehr Kontrolle bieten und weniger Media Queries benötigen, wodurch diese Komponente wiederum leichter zu warten wäre.Außerdem würde ich den Labels 'display: inline-block;' geben, damit wirklich nur deren Text anklickbar ist."
+                        content: "Wenn ich das Projekt ein zweites Mal machen würde, dann würde ich die Karten mittels 'display: grid' positionieren und den Hintergrund mittels 'position: absolute;'. Das sollte sehr viel mehr Kontrolle bieten und weniger Media Queries benötigen, wodurch diese Komponente wiederum leichter zu warten wäre. Außerdem würde ich den Labels 'display: inline-block;' geben, damit wirklich nur der Text anklickbar ist."
                     },
                 ]
             },
@@ -181,7 +181,7 @@ export const projects_text_data = {
                     },
                     {
                         title: "Was ich gelernt habe",
-                        content: "Was ich im Laufe dieses Projektes gelernt habe, und es mag absurd klingen, ist, dass die Schriftgröße einen großen Einfluss auf das Gesamtbild haben kann, was ich vorher nicht angenommen hätte. Ansonsten habe ich generell meine Intuition und Verständnis für Design weiterentwickelt. Wie so häufig hat sich auch wieder herausgestellt, dass Vorausplanen, z.B. über ein Figma-Design, mir eventuell einiges an Zeit hätte sparen können. Ich dachte, ich schaffe das einfach während ich programmiere, aber Ende glaube ich, dass ein ordentlicher Plan mir Zeit gespart hätte."
+                        content: "Was ich im Laufe dieses Projektes gelernt habe, und es mag absurd klingen, ist, dass die Schriftgröße einen großen Einfluss auf das Gesamtbild haben kann, was ich vorher nicht angenommen hatte. Ansonsten habe ich generell meine Intuition und Verständnis für Design weiterentwickelt. Wie so häufig hat sich auch wieder herausgestellt, dass Vorausplanen, z.B. über ein Figma-Design, mir eventuell einiges an Zeit hätte sparen können. Ich dachte, ich schaffe das einfach während ich programmiere, aber am Ende glaube ich, dass ein ordentlicher Plan mir Zeit gespart hätte."
                     },
                 ]
             }
@@ -262,15 +262,15 @@ export const projects_text_data = {
                 ],
                 details: [
                     {
-                        title: "Ziel und Sinn",
+                        title: "Goal and Purpose",
                         content: "This is one of my newer projects besides the portfolio. After not being satisfied with the first version of my portfolio, I wanted to tackle another project for distraction and practice. I chose this frontend mentor challenge because the positioning of the cards looked interesting to me and I hadn't done any form validation in a long time."
                     },
                     {
-                        title: "Gedankenprozess",
+                        title: "Thought Process",
                         content: "I mainly thought about the positioning of the cards because I knew that I would easily manage the regular expressions for the form validation. My first thought for the positioning of the cards was simply 'position: absolute;' with '%' as the unit. Media queries would then be able to solve the rest."
                     },
                     {
-                        title: "Was ich anders machen würde",
+                        title: "What I would do differently",
                         content: "If I were to do the project a second time, then I would position the cards using 'display: grid' and the background using 'position: absolute;'. This should provide much more control and require fewer media queries, which in turn would make this component easier to maintain. I would also give the labels 'display: inline-block;' so that only their text is really clickable."
                     },
                 ]
@@ -297,7 +297,7 @@ export const projects_text_data = {
                         content: "I wanted to challenge myself a little with this project. I tried out jQuery (a Javascript library) for myself and how to deal with changeable themes in CSS. But I haven't used jQuery again since. I also wanted to do something more complex than just structure, styling and simple interactivity."
                     },
                     {
-                        title: "eval-Funktion (kurz: eval())",
+                        title: "eval-function (short: eval())",
                         content: "In the calculator, all inputs are treated as text. Using eval(), this arithmetic in text form can be converted into real numbers and evaluated. Unfortunately, eval() is a security risk, so it should be avoided (see MDN Web Docs for details). The interesting challenge with my eval() was that the operator order must be respected. This is not necessarily trivial because the expressions can be very long. Fortunately, there were no brackets in this particular project, so I was able to make my eval() a little simpler. Put simply, the program looks at each sub-expression and tries to simplify everything step by step until there is only one number left. To find a sub-expression, the program goes through the input like a cursor and searches for arithmetic symbols and then for the corresponding numbers and then simplifies. Working out the many different possible solutions and finally implementing one was a lot of fun."
                     },
                 ]
@@ -324,7 +324,7 @@ export const projects_text_data = {
                 details: [
                     {
                         title: "Goal and Purpose",
-                        content: "My main goal with the portfolio project was that I wanted to prove my own skills to myself and to make sure I was ready for a front-end developer job. Also, I hadn't done much design work before and I wanted to train my eyes properly. I know basic principles like 'whitespace', 'hierarchy', 'focal point' and '60/30/10' in terms of color selection, but I still have a lot to learn about 'design' itself."
+                        content: "My main goal with the portfolio project was that I wanted to prove my own skills to myself and to make sure I was ready for a front-end developer job. Also, I hadn't done much design work before and I wanted to train my eyes. I know basic principles like 'whitespace', 'hierarchy', 'focal point' and '60/30/10' in terms of color selection, but I still have a lot to learn about 'design' itself."
                     },
                     {
                         title: "First Try",
