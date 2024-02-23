@@ -14,7 +14,7 @@ export default function Header(props:HeaderProps) {
         <nav>
           <button onClick={() => props.changePage("Home")}>{props.lang == "EN" ? "Home" : "Startseite"}</button>
           <button onClick={() => props.changePage("About")}>{props.lang == "EN" ? "About me" : "Über mich"}</button>
-          <a href="mailto:paul.pfuetze@gmx.de">{props.lang == "EN" ? "Contact" : "Kontakt"}</a>
+          <a href="mailto:paul.pfuetze@gmx.de" title="paul.pfuetze@gmx.de">{props.lang == "EN" ? "Contact" : "Kontakt"}</a>
         </nav>
         <div className="lang-container">
           <button className={props.lang == "DE" ? "lang active" : "lang"} onClick={() => props.setLang("DE")}>DE</button>

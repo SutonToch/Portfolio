@@ -18,7 +18,7 @@ export default function Footer(props:FooterProps) {
         <div className="container">
             <div>
                 <a onClick={() => props.changePage("About")}>{props.text_data.btn_about}</a>
-                <a href="mailto:paul.pfuetze@gmx.de">{props.text_data.btn_contact}</a>
+                <a href="mailto:paul.pfuetze@gmx.de" title="paul.pfuetze@gmx.de">{props.text_data.btn_contact}</a>
             </div>
             <div className="attribution">
                 {props.text_data.content}
