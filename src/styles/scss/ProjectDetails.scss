@@ -75,6 +75,18 @@
 .project-elements-container {
     max-width: 100ch;
     margin: 5em auto;
+
+    h2 {
+        margin-block: 1em 0.2em;
+    }
+
+    h3 {
+        margin-block: 0.4em 0.2em;
+    }
+
+    p {
+        margin-block: 0.6em;
+    }
 }
 
 @media (max-width: 1100px) {

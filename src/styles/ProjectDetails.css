@@ -66,6 +66,15 @@
   max-width: 100ch;
   margin: 5em auto;
 }
+.project-elements-container h2 {
+  margin-block: 1em 0.2em;
+}
+.project-elements-container h3 {
+  margin-block: 0.4em 0.2em;
+}
+.project-elements-container p {
+  margin-block: 0.6em;
+}
 
 @media (max-width: 1100px) {
   .project-title-container {
