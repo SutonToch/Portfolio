@@ -181,7 +181,7 @@ export const projects_text_data = {
                     },
                     {
                         title: "Was ich gelernt habe",
-                        content: "Was ich im Laufe dieses Projektes gelernt habe, und es mag absurd klingen, ist, dass die Schriftgröße einen großen Einfluss auf das Gesamtbild haben kann, was ich vorher nicht angenommen hatte. Ansonsten habe ich generell meine Intuition und Verständnis für Design weiterentwickelt. Wie so häufig hat sich auch wieder herausgestellt, dass Vorausplanen, z.B. über ein Figma-Design, mir eventuell einiges an Zeit hätte sparen können. Ich dachte, ich schaffe das einfach während ich programmiere, aber am Ende glaube ich, dass ein ordentlicher Plan mir Zeit gespart hätte."
+                        content: "Die kleinsten Veränderungen können einen großen Einfluss auf das visuelle Gesamtbild machen, z.B. Schriftgröße, Zeilenabstand oder die maximale Breite eines Textcontainers. Ansonsten habe ich generell meine Intuition und Verständnis für Design weiterentwickelt.  Wie so häufig hat sich auch wieder herausgestellt, dass Vorausplanen, z.B. über ein Figma-Design, mir eventuell einiges an Zeit hätte sparen können.  Ich dachte, ich schaffe das einfach während ich programmiere, aber am Ende glaube ich, dass ein ordentlicher Plan mir Zeit gespart hätte."
                     },
                 ]
             }
@@ -367,7 +367,7 @@ export const projects_text_data = {
                     },
                     {
                         title: "What I learned",
-                        content: "One thing I have learned in the course of this project, and it may sound absurd, is that font size can have a big impact on the overall look, which I would not have assumed before. Apart from that, I have generally improved my intuition and understanding of design. As is so often the case, it also turned out that planning ahead, e.g. via a Figma design, could have saved me a lot of time. I thought I could just do it while I was programming, but in the end I think a proper plan would have saved me time."
+                        content: "The smallest changes can have a major impact on the overall visual appearance, e.g. font size, line spacing or the maximum width of a text container. Apart from that, I have generally improved my intuition and understanding of design. As is so often the case, it also turned out that planning ahead, e.g. via a Figma design, could have saved me a lot of time. I thought I could just do it while I was programming, but in the end I think a proper plan would have saved me time."
                     },
                 ]
             }
