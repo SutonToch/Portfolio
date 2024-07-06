@@ -1,11 +1,36 @@
 import klickPic from "./../assets/portfolio_klick_700.png"
-import cardPic from "./../assets/portfolio_card_700.png"
+import shoppingPic from "./../assets/portfolio_shopping_600.png"
 import trPic from "./../assets/portfolio_tr_700.png"
 import portfolioPic from "./../assets/portfolio_hero_700.png"
 
 export const projects_text_data = {
     "de": {
         "projects": [
+            {
+                title: "Einkaufszettel App (Alpha)",
+                state: "Shopping",
+                imgPath: shoppingPic,
+                stack: [
+                    "Firebase Auth",
+                    "Firebase Firestore",
+                    "TypeScript",
+                    "CSS",
+                    "HTML"
+                ],
+                liveURL: "",
+                github: "https://github.com/SutonToch/BetterShoppingList",
+                short: [
+                    "Eine Einkaufszettel-App die ich aktuell noch aktiv entwickel. Mich hatte die Auswahl an Einkaufszettel Apps nicht wirklich beeindruckt und es gab immer etwas, was mich gestört hat, deswegen habe ich einfach meine eigene gemacht.", 
+                    "Bis jetzt sind erstmal nur die Grundlagen implementiert: simple Authentifizierung, Firebase im Hintergrund um Daten zu speichern und bereits hinzugefügte Elemente werden gemerkt und können schneller erneut hinzugefügt werden. In der Zukunft soll der User auch dazu in der Lage sein: Preis für jede Ware hinzuzufügen, um Preisentwicklungen beobachten zu können und eine Schätzung für die Einkaufskosten zu erhalten; Nährstoffwerte für jede Ware hinzuzufügen, um abschätzen zu können, wie gesund man einkauft; Rezepte zu erstellen, anhand davon die Zutaten schnell auf die Einkaufsliste hinzuzufügen sowie geschätzte Kosten und Nährstoffauflistung der einzelnen Rezepte.", 
+                    "Ohne ein von mir angelegtes Konto lässt sich die App leider nicht verwenden. Wenn Interesse besteht, können Sie mir jederzeit Fragen dazu stellen oder in GitHub vorbeischauen."
+                ],
+                details: [
+                    {
+                        title: "Ziel und Sinn",
+                        content: "Bis ich an dieser App gearbeitet habe, habe ich eine Todo-Listen-App als meine Einkaufszettel-App verwendet, weil ich bisher keine Einkaufszettel-App gefunden habe, die ich mochte. Also wollte ich meine Fähigkeiten zum Einsatz bringen und mir selbst eine Einkaufszettel-App bauen. Am Ende des Tages geht es einfach nur darum, dass ich und ggf. Familie und Freunde eine gute App haben, die Zeit bei der Einkaufsplanung sparen kann."
+                    },
+                ]
+            },
             {
                 title: "Klick - Cursor Browsergame",
                 state: "Klick",
@@ -52,40 +77,6 @@ export const projects_text_data = {
                     {
                         title: "Tricks für höhere Punktzahlen",
                         content: "Es sollte klar sein, dass das Spiel einfacher wird, je weniger Abstand zwischen den auftauchenden Boxen ist. Wenn berechnet wird, wo eine Box auftaucht, wird immer die Größe des Fensters mit in Betracht gezogen. Ein verkleinertes Fenster macht das Spiel also leichter. Außerdem hat 'Klick' eine dynamisch skalierende Schwierigkeit, in der eine schnelle Reaktionszeit die Schwierigkeit mehr erhöht. Wenn man entsprechend eine Box erst dann klickt, kurz bevor sie verschwindet, kann die Schwierigkeit sogar, bis zu einem gewissen Punkt, verringert werden."
-                    },
-                ]
-            },
-            {
-                title: "Frontend Mentor - Kreditkarten Details Formular",
-                state: "Cards",
-                imgPath: cardPic,
-                stack: [
-                    "React",
-                    "Vite",
-                    "npm",
-                    "TypeScript",
-                    "SCSS",
-                    "HTML"
-                ],
-                liveURL: "https://sutontoch.github.io/interactive-card-details-form/",
-                github: "https://github.com/SutonToch/interactive-card-details-form",
-                short: [
-                    "Ein 'Frontend Mentor'-Projekt, bei dem man eine Komponente zur Eingabe von Kreditkartendaten erstellt. Diese sollen dann dynamisch auf der Seite angezeigt werden.", 
-                    "Durch dieses Projekt konnte ich mein Verständnis für Positionierung vertiefen, sodass ich es jemandem anderem ohne Probleme vermitteln könnte. Hier habe ich auch die regulären Ausdrücke aus meiner Studienzeit wiederholt.", 
-                    "Wenn ich das Projekt ein zweites Mal machen würde, würde ich etwas anders an das Layout herangehen. Wenn Interesse besteht, unter 'Mehr anzeigen' gehe ich tiefer ins Detail."
-                ],
-                details: [
-                    {
-                        title: "Ziel und Sinn",
-                        content: "Dies ist eins meiner neueren Projekte neben dem Portfolio. Nachdem ich mit der ersten Version meines Portfolios nicht zufrieden war, wollte ich erstmal ein anderes Projekt zur Ablenkung und Übung angehen. Ich habe diese Frontend-Mentor-Challenge gewählt, weil die Positionierung der Karten für mich interessant aussah und ich schon lange keine Formularvalidierung mehr gemacht hatte."
-                    },
-                    {
-                        title: "Gedankenprozess",
-                        content: "Ich habe mir hauptsächlich über die Positionierung der Karten Gedanken gemacht, weil ich wusste, dass ich die regulären Ausdrücke für die Formularvalidierung schaffen würde. Mein erster Gedanke für die Positionierung der Karten war einfach nur 'position: absolute;' mit '%' als Einheit. Den Rest würden dann ggf. Media Queries lösen können."
-                    },
-                    {
-                        title: "Was ich anders machen würde",
-                        content: "Wenn ich das Projekt ein zweites Mal machen würde, dann würde ich die Karten mittels 'display: grid' positionieren und den Hintergrund mittels 'position: absolute;'. Das sollte sehr viel mehr Kontrolle bieten und weniger Media Queries benötigen, wodurch diese Komponente wiederum leichter zu warten wäre. Außerdem würde ich den Labels 'display: inline-block;' geben, damit wirklich nur der Text anklickbar ist."
                     },
                 ]
             },
@@ -193,6 +184,31 @@ export const projects_text_data = {
     "en": {
         "projects": [
             {
+                title: "Groceries List App (Alpha)",
+                state: "Shopping",
+                imgPath: shoppingPic,
+                stack: [
+                    "Firebase Auth",
+                    "Firebase Firestore",
+                    "TypeScript",
+                    "CSS",
+                    "HTML"
+                ],
+                liveURL: "",
+                github: "https://github.com/SutonToch/BetterShoppingList",
+                short: [
+                    "A groceries list app that I am currently still actively developing. I wasn't impressed by the selection of groceries list apps and there was always something that bothered me, so I just made my own.", 
+                    "So far, only the basics have been implemented: simple authentication, Firebase in the background to save data and items that have already been added are remembered and can be added again more quickly. In the future, the user should also be able to: add price for each item to monitor price trends and get an estimate of groceries costs; add nutritional values for each item to estimate how healthy you are shopping; create recipes to quickly add ingredients to the groceries list, as well as estimated costs and nutritional listing of each recipe.", 
+                    "Unfortunately, the app cannot be used without an account created by me. If you are interested, you can always ask me questions about it or have a look on GitHub."
+                ],
+                details: [
+                    {
+                        title: "Goal and Purpose",
+                        content: "Until I worked on this app, I was using a todo list app as my groceries list app because I hadn't found a groceries list app that I liked. So I wanted to put my skills to use and build myself a groceries list app. At the end of the day, it's just about me and possibly family and friends having a good app that can save time when planning groceries."
+                    },
+                ]
+            },
+            {
                 title: "Klick - Cursor Browser Game",
                 state: "Klick",
                 imgPath: klickPic,
@@ -238,40 +254,6 @@ export const projects_text_data = {
                     {
                         title: "Tricks for a better Highscore",
                         content: "It should be clear that the less space between the boxes that appear, the easier the game will be. When calculating where a box appears, the size of the window is always taken into account, so a smaller window makes the game easier. In addition, 'Klick' has a dynamically scaling difficulty, where a fast reaction time increases the difficulty faster. Accordingly, if you click a box just before it disappears, the difficulty can even be reduced, up to a certain point."
-                    },
-                ]
-            },
-            {
-                title: "Frontend Mentor - Card Details Form",
-                state: "Cards",
-                imgPath: cardPic,
-                stack: [
-                    "React",
-                    "Vite",
-                    "npm",
-                    "TypeScript",
-                    "SCSS",
-                    "HTML"
-                ],
-                liveURL: "https://sutontoch.github.io/interactive-card-details-form/",
-                github: "https://github.com/SutonToch/interactive-card-details-form",
-                short: [
-                    "A 'Frontend Mentor' project in which you create a component for entering credit card details. These should then be displayed dynamically on the page.", 
-                    "This project allowed me to deepen my understanding of positioning to such an extent, that I could easily teach it to someone else. Here I also revisited the regular expressions from my student days.", 
-                    "If I were to do the project a second time, I would approach the layout slightly differently. If you are interested, I go into more detail under 'Show more'."
-                ],
-                details: [
-                    {
-                        title: "Goal and Purpose",
-                        content: "This is one of my newer projects besides the portfolio. After not being satisfied with the first version of my portfolio, I wanted to tackle another project for distraction and practice. I chose this frontend mentor challenge because the positioning of the cards looked interesting to me and I hadn't done any form validation in a long time."
-                    },
-                    {
-                        title: "Thought Process",
-                        content: "I mainly thought about the positioning of the cards because I knew that I would easily manage the regular expressions for the form validation. My first thought for the positioning of the cards was simply 'position: absolute;' with '%' as the unit. Media queries would then be able to solve the rest."
-                    },
-                    {
-                        title: "What I would do differently",
-                        content: "If I were to do the project a second time, then I would position the cards using 'display: grid' and the background using 'position: absolute;'. This should provide much more control and require fewer media queries, which in turn would make this component easier to maintain. I would also give the labels 'display: inline-block;' so that only their text is really clickable."
                     },
                 ]
             },

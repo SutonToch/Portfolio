@@ -20,7 +20,7 @@
   position: relative;
   z-index: 1;
   border: 6px solid hsl(0, 0%, 95%);
-  max-width: 470px;
+  max-width: 420px;
   overflow: hidden;
   transition: border-color 0.3s ease-in-out;
 }
